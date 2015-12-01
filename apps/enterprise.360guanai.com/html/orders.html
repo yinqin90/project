@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="utf-8">        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">        
+        <meta name="renderer" content="webkit">        
+        <link rel="dns-prefetch" href="http://www.360guanai.com">        
+        <meta name="viewport" content="width=device-width, initial-scale=1">        
+        <title>企业中心 - 关爱体检通</title>
+        <meta name="keywords" content="企业体检,体检团购,体检预约,体检套餐,体检医院">
+        <meta name="description" content="关爱体检通是全国首家知名体检中心指定服务平台，支持爱康国宾、瑞慈、美年大健康、慈铭等体检中心和长海医院、东方医院、曙光医院、瑞金医院等体检医院。低于团购，欢迎企业及个人咨询400-728-7289"> 
+        <meta http-equiv="pragma" content="no-cache"> 
+        <meta http-equiv="cache-control" content="no-cache"> 
+        <meta http-equiv="expires" content="0"> 
+        <!-- 引入Bootstrap框架的stylesheet资源 -->
+        <link rel="stylesheet" href="//cdn01.360guanai.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//cdn08.360guanai.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="//cdn16.360guanai.com/apps/enterprise.360guanai.com/css/enterprise.min.css">
+        <link rel="stylesheet" href="//cdn16.360guanai.com/apps/enterprise.360guanai.com/css/orders.min.css">
+        <!--[if lte IE 6]>        
+        <link rel="stylesheet" type="text/css" href="//cdn19.360guanai.com/bootstrap/plugins/bsie/bootstrap-ie6.min.css">        
+        <link rel="stylesheet" type="text/css" href="//cdn14.360guanai.com/bootstrap/plugins/bsie/ie.min.css">
+        <![endif]-->                 
+    </head>
+    
+    <body>
+        <!--页面顶部蓝色条-->
+        <div id="toper"></div>
+        <!--页面主体部分-->
+        <div id="pageBody">
+            <!--左边的搜索及导航侧栏-->
+            <div id="lSide"></div>
+            <!--右边的操作面板侧栏-->
+            <div id="rSide" class="tabs">
+                <ul class="tabs-handle">
+                    <li class="on">订单基本信息</li>                        
+                    <li>订单明细</li>
+                    <li>预约明细</li>
+                </ul>
+                <!--订单基本信息frame-->
+                <div class="tabs-frame" id="orderInfoContainer">
+                    <ul>
+                        <li>订单编号：<span class="arial orderid"></span></li>
+                        <li>订单状态：<span class="status"></span></li>
+                        <li>产品类型：<span class="producttype"></span></li>
+                        <li>发货状态：<span class="deliverstatus"></span></li>
+                        <li>支付状态：<span class="paymentstatus"></span></li>
+                        <li>下单时间：<span class="createdate arial"></span></li>
+                        <li>最后修改时间：<span class="lastupdatedate arial"></span></li>
+                    </ul>
+                    <hr>
+                    <ul>
+                        <li>联系人：<span class="contact"></span></li>
+                        <li>联系电话：<span class="tel arial"></span></li>
+                        <li>收货地址：<span class="address" title=""></span></li>                            
+                    </ul>
+                    <hr>
+                    <!--
+                    <ul>
+                        <li>总金额：￥<span class="totalamount arial"></span></li>
+                        <li>抵扣金额：￥<span class="discount arial"></span></li>                                                  
+                    </ul>                    
+                    <hr>
+                    -->
+                    <p class="remark"></p>
+                </div>
+                <!--订单明细-->
+                <div class="tabs-frame" id="orderDetailContainer">
+                    <table class="table table-hover">                        
+                        <thead>
+                            <tr>                                    
+                                <th>产品名称</th>
+                                <th>数量</th>
+                                <th>退货数</th>
+                                <!--
+                                <th>单价</th>
+                                <th>折扣</th>
+                                <th>金额</th>
+                                -->
+                                <th>最后修改时间</th>
+                                <th>管理选项</th> 
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+                <!--预约明细-->
+                <div class="tabs-frame" id="orderBespeakContainer">
+                    <div class="filter-panel">
+                        <form class="form-inline">
+                            <div class="form-group">
+                              <label>预约人：</label>
+                              <input type="text" class="form-control" name="bookingname" size="10">
+                            </div>
+                            <div class="form-group">
+                              <label>身份证号：</label>
+                              <input type="text" class="form-control" name="idnumber" size="10">
+                            </div>
+                            <div class="form-group">
+                              <label>预约状态：</label>
+                              <select name="status" class="form-control">
+                                  <option value="" selected>请选择</option>                                  
+                                  <option value="未支付">未支付</option>
+                                  <option value="未审核">未审核</option>
+                                  <option value="已登记">已登记</option>
+                                  <option value="已取消">已取消</option>
+                                  <option value="已到检">已到检</option>
+                                  <option value="已结算">已结算</option>
+                                  <option value="未到检">未到检</option>
+                                  <option value="预约失败">预约失败</option>
+                                  <option value="初始化">初始化</option>
+                                  <option value="预约成功">预约成功</option>
+                              </select>
+                            </div>
+                            <button type="button" class="submit btn btn-default">搜索</button>
+                      </form>
+                    </div>
+                    <div class="total-panel">
+                        共找到符合条件的预约记录 <span class="arial text-danger"></span> 条
+                    </div>
+                    <table class="table table-hover">                        
+                        <thead>
+                            <tr>                                    
+                                <th>产品名称</th>
+                                <th>卡号</th>
+                                <th>预约人</th>
+                                <th>性别</th>
+                                <th>状态</th>
+                                <th>身份证号</th>
+                                <th>手机号</th>
+                                <th>预约体检时间</th>
+                                <th>预约门店</th>
+                                <th>报告寄送地址</th>
+                                <th>更新时间</th>   
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+                <!--tabs-frame清单结束-->
+            </div>
+            <!--中间的数据展示面板-->
+            <div id="dataPanel">
+                <!--面包屑-->
+                <div id="location">当前位置：管理控制台 <span>></span> 企业中心 <span>></span> 我的订单 <span>></span> <strong class="order-category-name"></strong></div>
+                <!--分割线-->
+                <hr>
+                <!--分类过滤及工具-->
+                <div class="btn-group order-category-list" role="group" aria-label="...">
+                    <a class="btn btn-default active" href="javascript:void(0);" data-filter="">全部订单</a>
+                    <!--<a class="btn btn-default" href="orders.html?status=noPay">未支付订单</a>-->
+                    <a class="btn btn-default" href="javascript:void(0);"  data-filter="deliverstatus=0">未发货订单</a>                            
+                </div>
+                <!--分割线-->
+                <hr>
+                <!--数据表格-->
+                <div class="list-container">
+                    <table class="table table-hover table-methodize">                        
+                        <thead>
+                            <tr>                                
+                                <th width="20" class="text-center"><input type="checkbox" name="row-handle"></th>
+                                <th>订单编号</th>
+                                <!--<th>总金额</th>
+                                <th>折扣金额</th>-->
+                                <th>订单状态</th>
+                                <th>发货状态</th>
+                                <th>支付状态</th>
+                                <!--<th>是否需要发票</th>-->
+                                <th>下单日期</th>                                                    
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+                <!--分割线-->
+                <hr>
+                <!--统计及分页-->
+                <div class="total-pagination clearfix">
+                    <div class="total pull-left">                        
+                        <span> 共</span>
+                        <span class="text-primary arial total-count"></span>
+                        <span>条，</span>
+                        <span> 已加载</span>
+                        <span class="text-primary arial loaded-count"></span>
+                        <span>条</span>
+                    </div>
+                    <div class="pull-right">
+                        <a href="javascript:void(0);" class="btn btn-default" id="loadMoreBtn" data-pageindex="1">加载下10条订单</a>
+                    </div>
+                </div>
+                <!--数据面板到这里结束-->
+            </div>
+        </div>
+        <!--[if IE 6]>
+        <script src="//cdn03.360guanai.com/guanaihui/js/compatible/DD_belatedPNG_0.0.8a-min.js"></script>
+        <script> DD_belatedPNG.fix('.pngfix'); </script>
+        <script type=”text/javascript”>  
+        // <![CDATA[ 
+        if((window.navigator.appName.toUpperCase().indexOf("MICROSOFT")>=0)&&(document.execCommand)) 
+        try{ 
+        document.execCommand("BackgroundImageCache", false, true); 
+        } 
+        catch(e){} 
+        // ]]>  
+        </script>
+        <![endif]-->
+        <!--[if lte IE 6]>        
+        <script type="text/javascript" src="//cdn19.360guanai.com/bootstrap/plugins/bsie/bootstrap-ie.min.js"></script>
+        <![endif]-->
+        <!--[if lt IE 9]>
+        <script src="//cdn05.360guanai.com/guanaihui/js/compatible/html5shiv.min.js"></script>
+        <script src="//cdn18.360guanai.com/guanaihui/js/compatible/respond.min.js"></script>
+        <script src="//cdn02.360guanai.com/guanaihui/js/compatible/ie8-responsive-file-warning.min.js"></script>
+        <![endif]-->        
+        <script src="//cdn07.360guanai.com/guanaihui/js/lib/jQuery/jquery-1.11.3.min.js"></script>        
+        <script data-main="//cdn02.360guanai.com/apps/enterprise.360guanai.com/js/orders.min.js" src="//cdn15.360guanai.com/guanaihui/js/require.min.js"></script>        
+    </body>
+</html>

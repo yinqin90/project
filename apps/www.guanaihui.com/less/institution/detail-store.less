@@ -1,0 +1,265 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：institution/details.less (机构详情页)
+ 3. 作者：liuchangkui@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@import "../variables";
+@import "../mixins";
+
+// 基础信息和幻灯片模块
+#infoContainer{
+  font-size:1.2rem;
+  margin:0 auto;
+  margin-bottom:40px;
+  .col-xs-6{
+    padding:0px;
+	background:#FFF;
+  }
+  #instInfo{
+    padding-right:40px;
+    hr{
+      border:1px solid #e3e3e3;
+    }
+    // 机构名称
+    #title{
+      h1{
+        font-size:2rem;
+        display:inline-block;
+        margin:0px;
+        color:#000;
+      }
+      span{
+        display:inline-block;
+        vertical-align: middle;
+        margin:0px 3px;
+      }
+      p{
+        margin:@gap-dimension 0;
+        line-height:2.2rem;
+      }
+    }
+    #prodProp{
+      margin-bottom:8px;
+    }
+    ul#prodTable{
+      width:100%;
+      list-style:none;
+      li{
+        display:inline-block;
+        margin:0;
+        padding:2px 3px;
+        width:32%;
+        dl{
+          border:1px solid #e3e3e3;
+          .border-radius(5px);
+          padding:2px;
+          margin:0 0 @gap-dimension 0;
+          cursor:pointer;
+          dt{
+            float:right;
+            width:50px;
+            background-color:transparent;
+            padding:2px 0px;
+            .border-radius(5px);
+            p{
+              color:#ff8400;
+              margin:0;
+              text-align:center;
+              &:nth-of-type(1){
+                font-size:1rem;
+                line-height:3rem;
+              }
+              &:nth-of-type(2){
+                display:none;
+              }
+            }
+          }
+          dd{
+            margin-right:50px;
+            padding-left:3px;
+            p{
+              width:110px;
+              margin:0;
+              overflow:hidden;
+              text-overflow:ellipsis;
+              white-space: nowrap;
+            }
+          }
+        }
+        &:hover{
+          dl{
+            border:1px solid #ff8400;
+            dt{
+              background-color:#ff8400;
+              p{
+                color:#FFF;
+                &:nth-of-type(1){
+                  line-height:1.2rem;
+                }
+                &:nth-of-type(2){
+                  display:block;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    // 行
+    .info-row{
+      margin: 20px 0;
+    }
+  }
+  .userflag{
+    background-color:#fcca00;
+    .border-radius(3px);
+    padding:2px 4px;
+    text-align: center;
+    color:#fff;
+  }
+  .score{
+    i{
+      color:#d2d2d2;
+      &.active{
+        color:#ff8400;
+      }
+    }
+    span{
+      font-size:1.6rem;
+      display: inline-block;
+      margin-left:10px;
+      color:#ff8400;
+    }
+  }
+
+}
+
+.viewer{
+  padding:@gap-dimension !important;
+  border:1px solid #dfdede;
+  margin-bottom:@gap-dimension !important;
+  img{
+    width:580px;
+    height:356px;
+  }
+}
+
+.inst-img-box{
+  position:relative;
+  padding:0 30px;
+  .controller{
+    background : #f4f4f4 ;
+    cursor : pointer ;
+    position : absolute ;
+    width : 28px ;
+    height:75px;
+    line-height: 75px;
+    z-index : 1000 ;
+    .iconfont{
+      font-family: "宋体";
+      font-size:3rem;
+      line-height:3rem;
+    }
+    &.prev{
+      left:0;
+    }
+    &.next{
+      right:0;
+    }
+  }
+  .content{
+    display:inline-block;
+    border:1px solid #eee;
+    height:75px;
+    width:100%;
+    overflow:hidden;
+    text-align:center;
+    .item{
+      width:121px;
+      height:75px;
+      display:inline-block;
+      margin:0 6px !important;
+    }
+  }
+
+}
+// 地图和cms内容模块
+#descContainer{
+  border-top:1px solid #dfdfdf;
+  background-color:#fafafa;
+  font-size:1.2rem;
+  margin:0 auto;
+  padding-top:40px;
+  clear:both;
+  #body{
+    padding:0px;
+    margin:0 auto;
+    background-color:#FFF;
+    #instList{
+      margin:36px 20px 0 20px;
+      padding-bottom:36px;
+      overflow:hidden;
+      border-bottom:2px solid #e3e3e3;
+      // 地图
+      #baiduMapContainer{
+        width:750px;
+        height:360px;
+        float:left;
+      }
+      // 地图右边的机构门店信息和列表
+      #list{
+        margin-left:750px;
+        padding-left:35px;
+        height:360px;
+        h4{
+          font-size:1.4rem;
+          margin-top:5px;
+          padding:0px 0 8px 0;
+          font-weight:400;
+          border-bottom:1px solid #e3e3e3;
+          color:#333;
+        }
+        p{
+          // 门店地址
+          &.address{
+            .ellipsis();
+            margin:0;
+          }
+          // 交通信息图标
+          i{
+            margin-right:@gap-dimension;
+          }
+        }
+      }
+
+    }
+    #instDetails{
+      clear:both;
+    }
+  }
+  .section-title{
+    padding:0;
+  }
+}
+
+// 属性展示通用样式
+@width-prop:60px;
+dl.prop{
+  overflow: hidden;
+  color:#333;
+  dt{
+    width:@width-prop;
+    float:left;
+    text-align:right;
+    vertical-align: middle;
+  }
+  dd{
+    margin-left:@width-prop;
+    vertical-align: middle;
+  }
+}
+.ellipsis{
+  overflow:hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

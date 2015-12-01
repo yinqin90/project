@@ -1,0 +1,395 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：product/detail.less (产品详情页面)
+ 3. 作者：liuchangkui@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：mixins (混合)
+ 3. 作者：zhaohuagang@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：background.less(混合 -> 背景类)
+ 3. 作者：zhaohuagang@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：background.less(混合 -> 圆角类)
+ 3. 作者：zhaohuagang@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：background.less(混合 -> 块级化并居中类)
+ 3. 作者：zhaohuagang@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1.  项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：display.less(混合 -> 显示方式类)
+ 3. 作者：zhaohuagang@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：float.less(混合 -> 浮动类)
+ 3. 作者：zhaohuagang@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：background.less(混合 -> 字体类)
+ 3. 作者：zhaohuagang@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：background.less(混合 -> 文本类)
+ 3. 作者：zhaohuagang@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：background.less(混合 -> 三角符号类)
+ 3. 作者：zhaohuagang@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：variables.less (整个应用的风格变量)
+ 3. 作者：zhaohuagang@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+块级颜色设置
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+线条颜色设置
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+字体颜色设置
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+字体设置
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+尺寸设置
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：pagination.less (分页器变量)
+ 3. 作者：zhaohuagang@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：product/detail.less (产品详情页面-页面滚动fixed)
+ 3. 作者：yinqin@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.product-fixed {
+  background-color: #ffffff;
+  border-bottom: 2px solid #eeeeee;
+  display: none;
+  height: 110px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+.product-fixed > div {
+  width: 1200px;
+  padding: 10px 0;
+  margin: 0 auto;
+  *zoom: 1;
+}
+.product-fixed > div:after {
+  clear: both ;
+  content: " ";
+  display: block ;
+  font-size: 0 ;
+  height: 0 ;
+  visibility: hidden ;
+}
+.product-fixed > div dl {
+  float: left;
+  padding-left: 15px;
+  *zoom: 1;
+}
+.product-fixed > div dl:after {
+  clear: both ;
+  content: " ";
+  display: block ;
+  font-size: 0 ;
+  height: 0 ;
+  visibility: hidden ;
+}
+.product-fixed > div dl dt {
+  float: left;
+  width: 140px;
+}
+.product-fixed > div dl dd {
+  margin-left: 155px;
+}
+.product-fixed > div dl dd.caption {
+  color: #333333;
+  font-size: 1.5rem;
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+.product-fixed > div .tool,
+.product-fixed > div .price {
+  float: right;
+  height: 90px;
+  padding: 10px 30px;
+}
+.product-fixed > div .price {
+  border-left: 1px dotted #eeeeee;
+  border-right: 1px dotted #eeeeee;
+}
+.product-fixed > div .price .current-price {
+  color: #ff8400;
+}
+.product-fixed > div .price .current-price em {
+  font-size: 3.5rem;
+  font-style: normal;
+}
+.product-fixed > div .price .original-price {
+  font-size: 1.2rem;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：product/detail.less (产品详情页面-产品描述)
+ 3. 作者：yinqin@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.description {
+  background-color: #fff;
+  padding: 15px 15px 0;
+  *zoom: 1;
+}
+.description:after {
+  clear: both ;
+  content: " ";
+  display: block ;
+  font-size: 0 ;
+  height: 0 ;
+  visibility: hidden ;
+}
+.description dt {
+  float: left;
+}
+.description dd {
+  display: block;
+  font-size: 1.2rem;
+  line-height: 25px;
+  margin-left: 490px;
+}
+.description dd h1 {
+  color: #333333;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+.description dd.store-name {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+.description dd.des {
+  height: 75px;
+  overflow: hidden;
+}
+.description dd.price {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.description dd.price .current-price {
+  color: #ff8400;
+  padding-right: 10px;
+}
+.description dd.price .current-price em {
+  font-size: 3.5rem;
+  font-style: normal;
+}
+.description dd.price .original-price {
+  font-size: 1.2rem;
+}
+.description dd.btn-toolbar {
+  margin-top: 20px;
+}
+.description dd.btn-toolbar .tool {
+  float: right;
+  padding: 10px;
+}
+.description dd.btn-toolbar .tool i {
+  padding-right: 5px;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：product/detail.less (产品详情页面-试用门店)
+ 3. 作者：yinqin@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.suit-store {
+  background-color: #fff;
+  padding: 15px;
+}
+.suit-store dl {
+  border-bottom: 1px dotted #eeeeee;
+}
+.suit-store dl dt {
+  color: #333333;
+  font-size: 1.6rem;
+  padding: 5px 0;
+}
+.suit-store dl dd {
+  font-size: 1.4rem;
+  padding: 5px 0;
+}
+.suit-store dl:last-child {
+  border-bottom: none;
+}
+.suit-store dl.more-item {
+  display: none;
+}
+.suit-store p {
+  color: #73aa2f;
+  font-size: 1.4rem;
+  padding: 10px 0;
+  text-align: center;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：product/detail.less (产品详情页面-右侧)
+ 3. 作者：yinqin@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.download-app {
+  background-color: #fff;
+  padding: 15px 0;
+  margin-bottom: 30px;
+}
+.download-app p.title {
+  color: #8bc93c;
+  font-size: 1.5rem;
+}
+.wechat {
+  background-color: #fff;
+  padding: 25px 15px;
+  *zoom: 1;
+}
+.wechat:after {
+  clear: both ;
+  content: " ";
+  display: block ;
+  font-size: 0 ;
+  height: 0 ;
+  visibility: hidden ;
+}
+.wechat dt {
+  float: left;
+}
+.wechat dd {
+  margin-left: 50px;
+}
+.wechat dd.caption {
+  color: #333333;
+  font-size: 1.4rem;
+  margin-top: 10px;
+}
+body {
+  background-color: #fafafa;
+}
+.container {
+  *zoom: 1;
+}
+.container:after {
+  clear: both ;
+  content: " ";
+  display: block ;
+  font-size: 0 ;
+  height: 0 ;
+  visibility: hidden ;
+}
+.container .layout-left {
+  margin-right: 230px;
+}
+.container .layout-right {
+  float: right;
+  width: 215px;
+  text-align: center;
+}
+/********bootstrap 样式*************/
+.btn-warning {
+  color: #fff;
+  background-color: #ff8400;
+  border-color: #ff8400;
+}
+.btn-lg {
+  padding: 15px 35px;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 产品描述
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.description dd h1 {
+  margin-bottom: 6px;
+}
+.description .des {
+  height: auto !important;
+}
+.description .des li {
+  display: inline-block;
+  margin-right: 8px;
+}
+.description .des li:before {
+  content: "·";
+}
+.description .store-name {
+  font-size: 1.6rem !important;
+  margin-bottom: 0 !important;
+}
+.description .price {
+  margin-top: 30px !important;
+  margin-bottom: 30px !important;
+}
+.description .price span {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+.description .price span.current-price {
+  font-size: 2rem;
+}
+.description .price span.current-price em {
+  font-size: 5rem !important;
+  vertical-align: text-bottom;
+}
+.description .price span.original-price {
+  text-decoration: line-through;
+}
+.description .prop-crowds {
+  margin-top: 10px;
+}
+.description .crowds div {
+  display: inline-block;
+  margin-right: 8px;
+  border: 1px solid #8bc93c;
+  padding: 3px 20px;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+.description .crowds div i {
+  vertical-align: top;
+  display: none;
+}
+.description .crowds div.selected {
+  background-color: #8bc93c;
+  color: #FFF;
+}
+.description .crowds div.selected i {
+  display: inline;
+}
+.suit-store dt {
+  background-color: #edeef2;
+  color: #777 !important;
+  font-size: 1.4rem !important;
+  padding-left: 10px !important;
+}
+.suit-store dd {
+  padding-left: 10px !important;
+  border-bottom: 1px solid #f7f7f7;
+}
+.suit-store dd.no-border {
+  border-bottom: 1px solid #FFF;
+}
+.fixed-mode .original-price {
+  text-decoration: line-through;
+}

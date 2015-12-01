@@ -1,0 +1,136 @@
+@import "../../../../guanaihui/less/mixins.less" ;
+@import "../variables.less" ;
+@size-userimg:100px;
+@tag-bgcolor:#81aa28;
+@tag-height:32px;
+body{
+	background-color:#FFF;
+}
+#wrapper{
+	padding:0px @gap-dimension;
+	#desc{
+		text-align:center;
+		margin-top:@gap-dimension;
+		img{
+			&:nth-of-type(1){
+				width:45%;
+			}
+			&:nth-of-type(2){
+				width:53%;
+			}
+			&:nth-of-type(3){
+				width:100%;
+			}
+		}
+		p{
+			margin-top:10px;
+			padding:10px 0px;
+			border-top:1px solid #e6e6e6;
+			text-align:left;
+		}
+	}
+	#team{
+		.item-list{
+			.item{
+				margin-bottom:20px;
+				dl{
+					dt{
+						background:url(//cdn01.360guanai.com/apps/m.360guanai.com/css/images/cms/bg_right.jpg) no-repeat;
+						background-position:right top;
+						background-size:50%;
+						width:@size-userimg;
+						float:left;
+						padding:15px 0px 0px 0px;
+						img{
+							width:80%;
+						}
+					}
+					dd{
+						margin-left:@size-userimg;
+						padding-left:@gap-dimension;
+						.tag{
+							padding:0px 5px;
+							text-align:center;
+							position:relative;
+							height:@tag-height;
+							line-height:@tag-height;
+							background:@tag-bgcolor;
+							display:inline-block;
+							font-size:1.8rem;
+							border-color:@tag-bgcolor;
+							color:#FFF;
+							width:25px;
+							float:left;
+							span{
+								display:block;
+								border-width:16px 12px;
+								border-style:solid ;
+								border-color: transparent transparent transparent @tag-bgcolor;
+								position:absolute;
+								right:-24px;
+								top:0px;
+							}
+						}
+						.username{
+							min-height:@tag-height;
+							font-weight:600;
+							font-size:1.6rem;
+							margin-left:45px;
+							overflow:hidden;
+						}
+						.username-en{
+							color:@tag-bgcolor;
+						}
+					}
+				}
+				
+				&.right{
+					dl{
+						dt{
+							background:url(//cdn01.360guanai.com/apps/m.360guanai.com/css/images/cms/bg_left.jpg) no-repeat;
+							background-position:left top;
+							background-size:50%;
+							width:@size-userimg;
+							float:right;
+							padding:15px 0px 0px 0px;
+							text-align:right;
+							img{
+								width:80%;
+							}
+						}
+						dd{
+							margin-right:@size-userimg;
+							padding-right:@gap-dimension;
+							margin-left:0px;
+						}
+					}
+				}
+			}
+		}
+	}
+	#environment{
+		clear:both;
+		img{
+			width:100%;
+			border:5px solid #e6e6e6;
+		}
+	}
+	#equipment{
+		.content{
+			position:relative;
+			img{
+				width:100%;
+			}
+			.text-content{
+				width:52%;
+				position:absolute;
+				bottom:@gap-dimension;
+				left:@gap-dimension;
+			}
+		}
+	}
+	.footer img{
+		width:100%;
+	}
+}
+

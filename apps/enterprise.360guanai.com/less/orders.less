@@ -1,0 +1,43 @@
+@import "http://cdn02.360guanai.com/guanaihui/less/mixins.less" ;
+#rSide {
+    .tabs-frame {
+        ul {            
+            li {
+                line-height : 30px ;
+                .inline-block() ;
+                margin-right : -3px ;
+                width : 50% ;
+                .text-ellipsis() ;
+                span {
+                    color : #777 ;
+                }
+            }
+        }
+        hr {
+            border-top : 1px dotted #efefef ;
+            margin : 10px 0 ;
+        }
+        .memo {
+            color : #777 ;
+        }
+    }    
+}
+
+#orderBespeakContainer {
+    .filter-panel {        
+        border-bottom : 1px solid #ddd ;        
+        padding : 0 0 15px 0 ;        
+    }
+    .total-panel {        
+        border-bottom : 1px solid #ddd ;  
+        margin-bottom : 5px ;
+        padding : 8px ;
+    }
+}
+
+#cardUseStatusContainer {
+    max-height : 500px ;
+    _height : ~"expression( this.offsetHeight < 500 ? 'auto' : '500px') ;" ;
+    margin-bottom : 10px ;
+    overflow : auto ;
+}

@@ -1,0 +1,51 @@
+@import "../../../../guanaihui/less/mixins.less" ;
+@import "../variables.less";
+#preferentialBody{
+    background-color:#fff;
+    color:#167d60;
+    font-size:1.4rem;
+    padding:0 10px;
+    margin-top:-70px;
+    overflow:hidden;
+    p{
+        text-align:center;
+        font-size:1.4rem;
+        font-weight:600;
+        margin:10px 0;
+        .num{
+            color:@danger-color;
+            font-size:3rem;
+            padding:0 5px;
+        }
+    }
+    p.text-large{
+        font-size:2rem;
+        font-weight:700;
+    }
+    p.text-mid{
+        font-size:1.5rem;
+        font-weight:600;
+        a{
+            color:@danger-color;
+            font-size:2.8rem;
+            padding:0 5px;
+        }
+    }
+    ul{
+        font-size:1.5rem;
+        font-weight:600;
+        text-align:center;
+        li{
+            display:inline-block;
+            padding:0 3px;
+            .circle{
+                background-color: #167d60;
+                display: inline-block;
+                height: 5px;
+                margin-right: 3px;
+                width: 5px;
+                border-radius:(50%);
+            }
+        }
+    }
+}

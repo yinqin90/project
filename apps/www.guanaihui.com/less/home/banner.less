@@ -1,0 +1,76 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：home/banner.less (首页头部)
+ 3. 作者：yinqin@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/********banner*************/
+
+.banner {
+    border: 1px solid @light-block-gray-color;
+    .clearfix();
+    .right {
+        float: right;
+        width: 245px;
+        text-align: center;
+        .title {
+            color: @dark-font-color;
+            font-size: 13px;
+            margin: 25px 0 10px;
+        }
+        .download-app {
+            img {
+                height: 96px;
+                width: 96px;
+            }
+        }
+        .hot {
+            img {
+                border: 1px solid @light-block-gray-color;
+                height: 125px;
+                width: 200px;
+            }
+        }
+    }
+    .left {
+        margin: 0 245px 0 220px;
+        .bannerSwap {
+            position: relative;
+            img{
+                height:337px;
+            }
+            .header-pagination {
+                bottom: 0;
+                left: 0;
+                position: absolute;
+                width: 100%;
+                text-align: center;
+                z-index: 100;
+                ul {
+                    margin: 15px;
+                    .clearfix();
+                    .inline-block();
+                    li {
+                        background: #ccc;
+                        float: left;
+                        .border-radius(100px);
+                        cursor: pointer;
+                        height: 15px;
+                        margin: 0 3px;
+                        width: 15px;
+                        &.on {
+                            background: #fff;
+                        }
+                    }
+                }
+            }
+            .content {
+                .clearfix();
+                .item {
+                    float: left;
+                }
+            }
+        }
+    }
+}

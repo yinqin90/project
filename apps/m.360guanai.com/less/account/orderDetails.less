@@ -1,0 +1,123 @@
+@import "../../../../guanaihui/less/mixins.less";
+@import "../variables.less";
+@info-color: #5cb85c;
+@info-impt-color: #fd816d;
+@font-weight-default: 500;
+.portal {
+    margin-top: @gap-dimension;
+    position: static;
+    &:first-of-type {
+        margin-top: 0px;
+    }
+}
+
+#totalPanel {
+    font-size: 1.2rem;
+    margin: 10px;
+    .label {
+        background-color: translate;
+        border: 1px solid @info-color;
+        color: @info-color;
+        font-weight: @font-weight-default;
+    }
+}
+
+.info {
+    color: @info-color;
+}
+
+.tip {
+    color: @font-color;
+}
+
+.price {
+    color: @info-impt-color !important;
+    font-size: 1.4rem !important;
+    &.old {
+        text-decoration: line-through !important;
+        color: @font-color !important;
+        font-size: 1.2rem !important;
+    }
+}
+
+.btn-pay {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    border-radius: 0px;
+    right: 0px;
+    width: 100%;
+    padding: @gap-dimension 0px;
+}
+
+.tabs {
+    .iconfont {
+        font-size: 1.6rem;
+        &.icon-bianji {
+            position: relative;
+            top: -2px;
+        }
+    }
+    .tabs-handle {
+        .ctrls {
+            float: right;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.info-block {
+    padding: @gap-dimension;
+    .btn-inner-block {
+        text-align: right;
+        border-top: 1px solid #eee;
+        padding-top: 8px;
+    }
+    dl {
+        padding: 5px 0px;
+    }
+    dt {
+        color: @font-color;
+        font-weight: 500;
+        width: 75px;
+        float: left;
+        text-align: right;
+        padding-right: @gap-dimension;
+        border-right: 1px solid #ccc;
+    }
+    dd {
+        padding-left: @gap-dimension;
+        color: @link-color;
+        margin-left: 75px;
+    }
+}
+
+table.prod-list {
+    width: 100%;
+    tr {
+        padding: @gap-dimension 5px;
+        border-top: 1px dotted #eee;
+        &:first-child {
+            border-top: 0px;
+        }
+        td {
+            padding: @gap-dimension 0px;
+        }
+        td:nth-of-type(1) {
+            width: 100px;
+            padding-left: @gap-dimension;
+            img {
+                width: 100%;
+            }
+        }
+        td:nth-of-type(2) {
+            vertical-align: top;
+        }
+        td:nth-of-type(3) {
+            width: 80px;
+            text-align: right;
+            padding-right: @gap-dimension;
+            vertical-align: top;
+        }
+    }
+}

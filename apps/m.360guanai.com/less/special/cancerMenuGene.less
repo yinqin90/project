@@ -1,0 +1,83 @@
+@import "../../../../guanaihui/less/mixins.less" ;
+@import "../variables.less" ;
+body{
+	background-color:#FFF;
+}
+#menuContent{
+	.funcs{
+		background:#FFF;
+		overflow:hidden;
+		border-bottom:1px solid #e0e0e0;
+		img{
+			width:55%;
+			float:left;
+		}
+		div{
+			margin-left:55%;
+			padding-top:3%;
+			h3{
+				font-size:1.8rem;
+				padding-right:20px;
+				color:#24bbf8;
+				margin:0px 0px 5px 0px;
+				text-align:right;
+			}
+			p{
+				padding-right:20px;
+				color:#898080;
+				font-size:1.2rem;
+				text-align:right;
+			}
+		}
+	}
+	.tabs{
+		background:#FFF;
+		.tabs-handle li{
+			width:48%;
+		}
+		.icon-dianpu2{
+			font-size:18px;
+		}
+		.list{
+			background:#FFF;
+			.list-group-item{
+				border:1px solid #f1f1f1;
+				border-radius:0px;
+				overflow:hidden;
+				a > img{
+					width:20%;
+					float:left;
+					border:1px solid #f1f1f1;
+				}
+				a > div{
+					margin-left:20%;
+					padding:0px @gap-dimension;
+					h4{
+						font-size:1.4rem;
+						overflow:hidden;
+						white-space:nowrap;
+						text-overflow:ellipsis;
+						color:#000;
+					}
+					p{
+						font-size:1.2rem;
+						overflow:hidden;
+						white-space:nowrap;
+						text-overflow:ellipsis;
+						
+					}
+				}
+			}
+			&#prodList{
+				p{
+					color:#fd8b79;
+				}
+			}
+			&#hospitalList{
+				p{
+					color:#888888;
+				}
+			}
+		}
+	}
+}

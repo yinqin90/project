@@ -1,0 +1,117 @@
+@import "../../../../guanaihui/less/mixins.less" ;
+@import "../variablesMember.less" ;
+
+.info{
+	color:@info-color;
+}
+.order-header{
+	.clearfix();
+	font-size:@font-size-sm;
+	height:30px;
+	line-height:30px;
+	padding:0px @gap-dimension;
+	background-color:@bg-color;
+	
+	.label{
+		background-color:#FFF;
+		border:1px solid @info-color;
+		color:@info-color;
+		font-weight:500;
+	}
+	.timebox{
+		float:right;
+		font-weight:@font-weight-default;
+		color:#aeaeae
+	}
+}
+
+.order-body{
+	border-top:1px solid @bg-color;
+	border-bottom:1px solid @bg-color;
+	padding:0px @gap-dimension;
+	p{
+		line-height:28px;
+		height:28px;
+		border-top:1px dotted @bg-color;
+		vertical-align:middle;
+		&:first-of-type{
+			border-top:0px;
+		}
+		.badge{
+			font-weight:400;
+			background-color:@info-color;
+		}
+	}
+}
+
+.order-footer{
+	height:35px;
+	line-height:35px;
+	font-size:@font-size-md;
+	font-weight:@font-weight-default;
+	background-color:@bg-color;
+	padding:0px @gap-dimension;
+	.btn{
+		float:right;
+	}
+}
+.order-price{
+	font-size:@font-size-lg;
+	color:#c9302c;
+    box-shadow:none;
+    margin-top:0px;
+    &:first-child{
+        margin-top:0px;
+        border-top:0px;
+    }
+}
+
+.order-prod-list{
+    width:100%;
+    overflow:hidden;
+    list-style:none;
+    margin-left:0px;
+
+    .order-prod-item{
+        display:block;
+        overflow:hidden;
+        padding:5px;
+        font-weight:@font-weight-default;
+        color:#000;
+        word-break:break-all;
+        word-wrap:break-word;
+        padding:2px 4px;
+        border-bottom:2px dotted @bg-color;
+        line-height:26px;
+
+        .serial{
+            position:relative;
+            top:-1px;
+        }
+        .badge{
+            font-weight:400;
+            background-color:@info-color;
+        }
+        &:last-child{
+            border-bottom:0px;
+        }
+    }
+}
+
+.order-btnpay{
+    float:right;
+    color:#FFF;
+    position:relative;
+    top:-2px;
+    background-color:@info-impt-color;
+    border:1px solid @info-impt-color;
+}
+#pagination{
+    border-top:1px dotted #eee;
+    clear:both;
+}
+
+#totalPanel {
+    font-size : 1.2rem ;
+    margin : 10px ;
+}

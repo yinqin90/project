@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>填写预约信息 - 关爱体检通</title>
+    <meta name="keywords" content="企业体检,体检团购,体检预约,体检套餐,体检医院">
+    <meta name="description" content="关爱体检通是全国首家知名体检中心指定服务平台，支持爱康国宾、瑞慈、美年大健康、慈铭等体检中心和长海医院、东方医院、曙光医院、瑞金医院等体检医院。低于团购，欢迎企业及个人咨询400-728-7289">
+    <!-- 引入stylesheet资源 -->
+    <link rel="stylesheet" href="//cdn01.360guanai.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://cdn01.360guanai.com/apps/m.360guanai.com/css/app.min.css">
+    <link rel="stylesheet" href="http://cdn01.360guanai.com/apps/m.360guanai.com/css/booking/confirm.min.css">
+</head>
+
+<body>
+    <!--头部logo|搜索|定位-->
+    <header>
+        <a href="javascript:history.back();" class="back"><i class="iconfont icon-fanhui"></i></a>
+        <h1>填写预约信息 - 预约</h1>
+    </header>
+    <form class="form-horizontal">
+        <div class="portal v-gap tabs" id="detailPanel">
+            <ul class="tabs-handle">
+                <li class="on">填写体检人信息</li>
+            </ul>
+            <dl>
+                <dt>姓名：</dt>
+                <dd>
+                    <input type="text" class="form-control">
+                </dd>
+            </dl>
+            <dl>
+                <dt>性别：</dt>
+                <dd>
+                    <div class="btn-group" role="group" aria-label="...">
+                        <button type="button" class="btn btn-default btn-sm active">男</button>
+                        <button type="button" class="btn btn-default btn-sm">未婚女</button>
+                        <button type="button" class="btn btn-default btn-sm">已婚女</button>
+                    </div>
+                </dd>
+            </dl>
+            <dl>
+                <dt>手机号码：</dt>
+                <dd>
+                    <input type="text" class="form-control">
+                </dd>
+            </dl>
+            <dl>
+                <dt>证件类型：</dt>
+                <dd>
+                    <div class="btn-group" role="group" aria-label="...">
+                        <button type="button" class="btn btn-default btn-sm active">身份证</button>
+                        <button type="button" class="btn btn-default btn-sm">护照</button>
+                    </div>
+                </dd>
+            </dl>
+            <dl>
+                <dt>证件号码：</dt>
+                <dd>
+                    <input type="text" class="form-control">
+                </dd>
+            </dl>
+        </div>
+        <div class="portal v-gap tabs">
+            <ul class="tabs-handle">
+                <li class="on">预约人手机号验证</li>
+            </ul>
+            <dl>
+                <dt>手机号码：</dt>
+                <dd>
+                    <input type="text" class="form-control">
+                    <a id="btn-vertify" class="btn btn-default brn-sm">获取验证码</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>验证码：</dt>
+                <dd>
+                    <input type="text" class="form-control">
+                </dd>
+            </dl>
+        </div>
+    </form>
+    <!--悬浮预约-->
+    <div class="fixed-toolbar">
+        <div class="btn-group btn-group-justified" aria-label="Justified button group" role="group">
+            <a class="btn btn-success" role="button" href="details.html"> 提交 </a>
+        </div>
+    </div>
+    <script src="http://cdn01.360guanai.com/apps/m.360guanai.com/js/app.min.js"></script>
+    <script data-main="http://cdn01.360guanai.com/apps/m.360guanai.com/js/bookingConfirm.min.js" src="http://cdn01.360guanai.com/guanaihui/js/require.min.js"></script>
+</body>
+
+</html>

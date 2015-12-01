@@ -1,0 +1,121 @@
+@import "../../../../guanaihui/less/mixins.less";
+@import "../variables.less";
+@import "../product/items.less";
+@import "../product/supportStore.less";
+.list {
+    dl {
+        padding: @gap-dimension 0;
+        dt {
+            float: left;
+            text-align: center;
+            width: 140px;
+            img {
+                height: 120px;
+                width: 120px;
+            }
+            h3 {
+                font-size: 1.4rem;
+                margin: 5px 0 0;
+            }
+        }
+        dd {
+            font-size: 1.2rem;
+            line-height: 22px;
+            margin-left: 140px;
+            i {
+                color: @decoration-color ;
+                font-size: 1.0rem;
+                margin-right: 5px;
+            }
+            .caption {
+                color: @decoration-color ;
+            }
+            .price {
+                color: #c00;
+                font-size: 1.4rem;
+                font-weight: 600;
+            }
+        }
+    }
+    .tools {
+        background: @page-background-color ;
+        border-bottom: 1px solid @portal-border-color ;
+        padding: 5px;
+        text-align: right;
+        a {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+#bridge {
+    font-size: 1.8rem;
+    padding: 10px;
+    text-align: center;
+    i {
+        font-size: 2.4rem;
+    }
+}
+
+#destinationSuit {
+    .filter-panel {
+        &>ul {
+            .clearfix();
+            padding: @gap-dimension 0 @gap-dimension @gap-dimension ;
+            &>li {
+                float: left;
+                padding-right: @gap-dimension ;
+                width: 33.3%;
+                .item {
+                    background: #fff;
+                    .border-radius(3px);
+                    border: 1px solid #ddd;
+                    display: block;
+                    padding: 0;
+                    .clearfix();
+                    &>div {
+                        padding: 6px;
+                    }
+                    .handle {
+                        float: right;
+                        line-height: 18px;
+                        padding: 4px;
+                        text-align: center;
+                        width: 24px;
+                        .iconfont {
+                            font-size: 1.0rem;
+                        }
+                    }
+                    .selected-label {
+                        border-right: 1px solid #ddd;
+                        font-size: 1.2rem;
+                        margin-right: 24px;
+                        text-align: left;
+                        .text-ellipsis();
+                    }
+                }
+            }
+        }
+    }
+    .list {
+        display: none;
+    }
+}
+
+.dropdown-menu {
+    min-width: 72px;
+    &>li>a {
+        font-size: 1.2rem;
+        padding: 3px 12px;
+    }
+}
+
+#filterResult {
+    display: none;
+}
+
+#supportStoreWindow {
+    .float-window-body {
+        padding: @gap-dimension ;
+    }
+}

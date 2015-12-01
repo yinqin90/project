@@ -1,0 +1,32 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：services-category-children (服务分类子菜单)
+ 3. 作者：zhaohuagang@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.services-category-children {
+    background : #fafafa ;
+    left : 220px ;
+    min-height : 321px ;
+    position : absolute ;
+    top : 0 ;
+    width : 730px ;
+    visibility : hidden ;
+    z-index : 1000 ;
+    &>.tabs-frame {
+        display : none ;
+        padding : 15px ;        
+        &>.child-category {            
+            &>a {
+                .border-radius(3px) ;
+                font-size : 12px ;
+                .inline-block() ;
+                margin : 5px ;
+                padding : 5px 8px ;
+                &:hover {
+                    background : @green-color ;
+                    color : #fff ;
+                }
+            }
+        }
+    }
+}

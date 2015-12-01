@@ -1,0 +1,102 @@
+@import "../../../../guanaihui/less/mixins.less" ;
+@import "../variables.less" ;
+@item-height:100px;
+#warpper{
+	padding-bottom:20px;
+	.portal{
+		box-shadow:none;
+		*{
+			width:100%;
+		}
+		&.item{
+			.title{
+				background-size:contain;
+				background-repeat:no-repeat;
+				height:100px;
+				line-height:100px;
+				padding-left:@gap-dimension;
+				span{
+					font-size:2.4rem;
+				}
+			}
+			.content{
+				border-top:1px solid #fcfcfc;
+				padding:@gap-dimension;
+				clear:both;
+				text-indent:1.6rem;
+				line-height:1.6rem;
+			}
+		}
+		&.item00{
+			.title{
+				background-image:url(../../css/images/cms/a-img02.jpg);
+				height:120px;
+				line-height:1.8rem;
+				p{
+					border-left:3px solid #8db140;
+					font-size:1.4rem;
+					padding-left:5px;
+					margin:8px 0px;
+					text-shadow:0px 0px 10px #FFF;
+					&:nth-of-type(1){
+						margin-left:215px;
+					}
+					&:nth-of-type(2){
+						margin-left:190px;
+					}
+					&:nth-of-type(3){
+						margin-left:165px;
+					}
+					&:nth-of-type(4){
+						margin-left:140px;
+					}
+				}
+			}
+		}
+		&.item01{
+			.title{
+				background-image:url(../../css/images/cms/a-img03.jpg);
+				padding-left:46%;
+			}
+		}
+		&.item02{
+			.title{
+				background-image:url(../../css/images/cms/a-img04.jpg);
+				background-position:right center;
+			}
+		}
+		&.item03{
+			.title{
+				background-image:url(../../css/images/cms/a-img05.jpg);
+				padding-left:46%;
+			}
+		}
+		&.item04{
+			.title{
+				background-image:url(../../images/cms/a-img06.jpg);
+				background-position:right center;
+			}
+		}
+		&.item05{
+			.title{
+				background-image:url(../../css/images/cms/a-img07.jpg);
+				padding-left:40%;
+				line-height:3.0rem;
+			}
+		}
+		.item-bottom{
+			overflow:hidden;
+			img{
+				width:40%;
+				float:left;
+			}
+			div{
+				margin-left:40%;
+				padding:@gap-dimension;
+				h5{
+					font-size:1.6rem;
+				}
+			}
+		}
+	}
+}

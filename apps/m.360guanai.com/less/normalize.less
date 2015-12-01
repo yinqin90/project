@@ -1,0 +1,405 @@
+.transparent {
+    background-color : transparent ;
+    border : 1px solid transparent ;
+    outline : none ;
+}
+
+.arial {
+    font-family : Arial, Helvetica, sans-serif ;
+}
+
+.simsun {
+    font-family : simsun ; 
+}
+
+.ime-disabled {
+    ime-mode : disabled ;
+}
+
+.more {    
+    line-height : 20px ;
+    margin-right : 8px ;
+    span {              
+        font-size : 1.2rem ;
+    }    
+}
+
+.v-gap {
+    margin-top : @gap-dimension ;
+}
+
+.tabs {
+    .tabs-handle {
+        border-bottom : 1px solid @portal-border-color ;
+        .clearfix() ;
+        li {
+            border-bottom : 2px solid transparent ;
+            color : @tabs-handle-color ;
+            float : left ;
+            font-size : 1.4rem ;
+            line-height : 25px ;
+            margin : 0 3px ;
+            padding : 5px ;
+            text-align : center ;
+            &.on {
+                border-bottom-color : @decoration-color ;
+                color : @decoration-color ; 
+            }
+        }
+    }
+    .tabs-frame {
+        .clearfix() ;        
+        &>a {                     
+            dl {                
+                .clearfix() ;                
+                dt {                    
+                    text-align : center ;                    
+                }
+                dd {
+                    color : @font-color ; 
+                    font-size : 1.2rem ;
+                    margin-bottom : 3px ; 
+                    .text-ellipsis() ;
+                    &.caption {
+                        color : @link-color ;
+                        font-size : 1.4rem ;
+                        line-height : 25px ;
+                    }
+                    i {
+                        margin-right : 3px ;
+                    }                    
+                }
+            }
+        }
+    }
+}
+
+.portal {
+    background : #fff ;
+    border-top : 1px solid @portal-border-color ;
+    box-shadow : 0 3px 6px rgba(0, 0, 0, .1) ;
+}
+
+header {
+    //background : #333; 
+    background : @decoration-color ;
+    //.v-gradient(@decoration-color , #398439, 0%, 100%) ;
+    .clearfix() ;
+    padding : 5px ;
+    //.v-gradient(#616161, #414141, 0%, 100%) ;
+    a {
+        color : #fff ;
+        line-height : 30px ;
+    }
+    .logo {
+        .inline-block() ;        
+        width : 100px ;
+        img {
+            border : none ;
+            height : 30px ;
+            width : 100px ;
+        }
+    }
+    .location {
+        color : #ccc ;        
+        .inline-block() ;
+        line-height : 30px ;
+        text-align : center ;
+        width : 60px ;
+        &>a {
+            color : #fff ;
+            font-size : 1.2rem ;
+            span {
+                .inline-block() ;
+                max-width : 40px ;
+                .text-ellipsis() ;
+            }
+            .triangle-down {
+                .triangle-down(4px, #fff) ;
+            }
+        }
+        .dropdown-menu {
+            min-width : 80px ;            
+        }
+    }
+    .assistant-tools {
+        display : none ;
+        float : right ;
+        margin : 1px ;
+        button {
+            width : 35px ;
+        }
+    }
+    
+    .back {
+        float : left ;
+        margin-left : 5px ;
+        width : 40px ;
+    }    
+    h1 {
+        color : #fff ;
+        font-size : 1.6rem ;
+        font-weight : 400 ;
+        line-height : 30px ;
+        margin : 0 60px 0 45px ;
+        text-align : center ;
+    }
+}
+
+nav {
+    background : #fff ;
+    border-bottom : 1px solid #ddd ;
+    .clearfix() ;
+    padding : 3px ;
+    a {
+        border-bottom : 3px solid transparent ;
+        color : @link-color ;
+        display : block ;
+        float : left ;
+        font-size : 1.4rem ;
+        height : 40px ;
+        line-height : 40px ;
+        text-align : center ;        
+        width : 20% ;        
+        &.on {
+            border-bottom-color : @decoration-color ;
+        }
+    }
+}
+
+#appDownload {
+    background : #eee ;
+    border-top : 1px solid #fff ;    
+    padding : 5px ;
+    dl {        
+        dt {
+            float : left ;            
+            text-align : center ;
+            width : 40px ;
+        }
+        dd {
+            font-size : 1.2rem ;
+            margin-left : 30px ;
+        }
+    }    
+}
+
+#searcher {
+    background : #fff ;
+    border-bottom : 1px solid @portal-border-color ;
+    display : none ;
+    padding : 8px ;
+    ul {      
+        .clearfix() ;        
+        li {
+            color : #666 ;
+            line-height : 28px ;
+            text-align : center ;
+        }
+        .addon {
+            background : @decoration-color ;
+            .border-right-radius(3px) ;
+            border : 1px solid @decoration-color ;
+            color : #fff ;
+            float : right ;            
+            width : 36px ;
+            i {
+                font-size : 2.0rem ;
+            }
+        }
+        .keywords {
+            .border-left-radius(3px) ;
+            border : 1px solid @portal-border-color ;
+            margin-right : 36px ;
+            input {
+                height : 28px ;
+                line-height : 28px ;
+                text-indent : 5px ;                
+                width : 100% ;
+            }
+        }
+    }
+}
+
+#dataLoadStatus {    
+    font-size : 1.2rem ;
+    padding : 10px ;
+    text-align : center ;
+}
+
+#pathNavigation {
+    border-top : 1px solid @portal-border-color ;  
+    border-bottom : 1px solid @portal-border-color ;  
+    font-size : 1.2rem ;
+    line-height : 30px ;
+    margin-top : 20px ;
+    padding : 5px 8px ;
+}
+
+footer {
+    border-top : 1px solid @portal-border-color ;    
+    margin-top : 20px ; 
+    #appStore {
+        padding : 10px 0 ;
+        text-align : center ;
+        a {
+            margin : 0 2px ;
+            i {
+                margin-right : 3px ;               
+            }
+        }
+    }
+    #copyright {
+        color : @copyright-color  ;
+        font-size : 1.2rem ;
+        padding : 10px ;
+        text-align : center ;
+    }
+}
+
+#floater {    
+    bottom : 60px ;    
+    position : fixed ;
+    right : 10px ;   
+    z-index : 100 ;    
+    li {        
+        background : rgba(0, 0, 0, .6) ;
+        .border-radius(100px) ;
+        height : 35px ;
+        margin-bottom : 5px ;
+        text-align : center ;
+        width : 35px ;
+        &.scroll-up {            
+            display : none ;
+        }
+        &>a {
+            color : #fff ;
+            display : block ;
+            line-height : 30px ;
+            i {
+                font-size : 1.6rem ;
+            }
+        }        
+    }
+    .share {
+        display : none ;
+    }
+    
+}
+
+.modal-content {
+    //background : rgba(255, 255, 255, .8) ;
+    .modal-tips {
+        font-size : 1.2rem ;
+        padding : 10px ;
+        text-align : center ;
+    }
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+宽度为95%的可以左右滑动的浮动窗口，应用场景：
+1. 门店列表页面选择地区
+2. 预约->套餐升级中查看体检项目
+3 ...
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.float-window {
+    background : rgba(255, 255, 255, 1) ;
+    box-shadow: 0 4px 23px 5px rgba(0, 0, 0, 0.4), 0 2px 6px rgba(0, 0, 0, 0.4) ;  
+    height : 100% ;
+    left : -100% ;    
+    /*overflow : auto ;*/
+    position : fixed ;
+    top : 0 ;
+    width : 95% ;
+    z-index : 1100 ;
+    .float-window-header {        
+        /*border-bottom : 1px solid #ddd ;*/
+        padding : @gap-dimension ;
+    } 
+    
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+固定在页面底部的工具条
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.fixed-toolbar {
+    background-color : rgba(255, 255, 255, .9) ;
+    box-shadow : 2px 2px 20px rgba(0, 0, 0, .4) ; 
+    bottom : 0 ;
+    left : 0 ;
+    padding : 7px ;
+    position : fixed ;
+    width : 100% ;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+固定在页面底部的导航条
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+#fixedNav {
+    .v-gradient(#fcfcfc, #eee, 0%, 100%) ;     
+    .clearfix() ;
+    padding : 0 ;
+    li {
+        border-left : 1px solid #fff ;
+        border-right : 1px solid @portal-border-color ;
+        float : left ;
+        height : 55px ;
+        text-align : center ;
+        width : 20% ;
+        a {
+            color : @link-color ; 
+            display : block ;
+            margin-top : 5px ;
+            text-shadow : 1px 1px 0px #fff ;
+            i {
+                font-size : 2.2rem ;
+                line-height : 25px ;
+            }
+            span {
+                display : block ;
+                font-size : 1.2rem ;                
+            }
+        }
+    }
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+整个应用确认框样式
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+#guanaihui-confirm {
+    .modal-header {
+        padding : 5px ;
+        h4 {
+            font-size : 1.6rem ;
+            line-height : 26px ;
+        }
+    }
+    .modal-confirm {
+        font-size : 1.4rem ;
+        padding : 10px ;
+    }
+    .modal-footer {
+        padding : 5px ;
+    }
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+滚动图片以及响应式图片等宽度设置为100%
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.carousel-inner>.item>a>img , 
+.carousel-inner>.item>img ,
+.img-responsive , 
+.thumbnail a>img , 
+.thumbnail>img {
+    width : 100% ;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+列表页面没有数据的提示
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+#noDataPanel {
+    background : #ffffdf ; 
+    border-top : 1px solid @portal-border-color ;
+    font-size : 1.4rem ;
+    line-height : 50px ;
+    text-align : center ;
+    i {
+        font-size : 20px ;
+    }
+}

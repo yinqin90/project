@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>购物车 - 关爱体检通</title>
+        <meta name="keywords" content="上海企业体检,上海体检团购,上海体检预约,上海体检套餐,上海体检医院">
+        <meta name="description" content="关爱体检通是全国首家知名体检中心指定服务平台，支持爱康国宾、瑞慈、美年大健康、慈铭等体检中心和长海医院、东方医院、曙光医院、瑞金医院等体检医院。低于团购，欢迎企业及个人咨询400-728-7289"> 
+        <!-- 引入stylesheet资源 -->
+        <link rel="stylesheet" href="//cdn01.360guanai.com/bootstrap/3.3.4/css/bootstrap.min.css">       
+        <link rel="stylesheet" href="http://cdn01.360guanai.com/apps/m.360guanai.com/css/app.min.css">
+        <link rel="stylesheet" href="http://cdn01.360guanai.com/apps/m.360guanai.com/css/cart/index.min.css"> 
+    </head>
+    <body>
+        <!--头部logo|搜索|定位-->
+        <header>
+            <a href="javascript:history.back();" class="back"><i class="iconfont icon-fanhui"></i></a>  
+            <div class="btn-group btn-group-xs assistant-tools" aria-label="Default button group" role="group">                
+                <button class="btn btn-success nav" type="button"><i class="iconfont icon-liebiao1"></i></button>            
+            </div>            
+            <h1>购物车</h1>
+        </header>        
+        <!--网站导航-->
+        <nav>
+            <a href="index.html" class="on">首页</a>
+            <a href="physicalStoreList.html">体检中心</a>
+            <a href="suitList.html">体检套餐</a>
+            <a href="#">一卡通</a>
+            <a href="#">热门活动</a>
+        </nav>
+        <div id="toolBar">
+            <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                <a href="javascript:void(0);" class="btn btn-default"><i class="iconfont icon-zhengque1"></i><span>全选</span></a>
+                <a href="javascript:void(0);" class="btn btn-default"><i class="iconfont icon-shanchu"></i><span>删除</span></a>
+            </div>
+            <div class="pull-right total">共有商品 <span class="text-danger arial">3</span> 件</div>
+        </div>
+        <div id="listContainer">
+            <ul>
+                <li class="manage">
+                    <a href="javascript:void(0);"><i class="iconfont icon-zhengque1"></i></a>
+                    <a href="javascript:void(0);"><i class="iconfont icon-shanchu"></i></a>
+                </li>
+                <li class="pict"><img data-src="//cdn15.360guanai.com/apps/m.360guanai.com/css/images/samplePict5.jpg" class="lazy" alt="全新版 套餐二"></li>
+                <li class="summary">
+                    <dl>
+                        <dt>A套餐(上海版)</dt>
+                        <dd>
+                            <span class="current-price">￥680</span>
+                            <span class="original-price">|￥1200</span>
+                            <div class="input-group">
+                                <div class="input-group-addon">-</div>
+                                <input type="text" class="form-control input-sm" value="1">
+                                <div class="input-group-addon">+</div>
+                            </div>
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+            <ul>
+                <li class="manage">
+                    <a href="javascript:void(0);"><i class="iconfont icon-zhengque1"></i></a>
+                    <a href="javascript:void(0);"><i class="iconfont icon-shanchu"></i></a>
+                </li>
+                <li class="pict"><img data-src="//cdn15.360guanai.com/apps/m.360guanai.com/css/images/samplePict4.jpg" class="lazy" alt="全新版 套餐二"></li>
+                <li class="summary">
+                    <dl>
+                        <dt>A套餐(上海版)</dt>
+                        <dd>
+                            <span class="current-price">￥680</span>
+                            <span class="original-price">|￥1200</span>
+                            <div class="input-group">
+                                <div class="input-group-addon">-</div>
+                                <input type="text" class="form-control input-sm" value="1">
+                                <div class="input-group-addon">+</div>
+                            </div>
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+            <ul>
+                <li class="manage">
+                    <a href="javascript:void(0);"><i class="iconfont icon-zhengque1"></i></a>
+                    <a href="javascript:void(0);"><i class="iconfont icon-shanchu"></i></a>
+                </li>
+                <li class="pict"><img data-src="//cdn15.360guanai.com/apps/m.360guanai.com/css/images/samplePict3.jpg" class="lazy" alt="全新版 套餐二"></li>
+                <li class="summary">
+                    <dl>
+                        <dt>A套餐(上海版)</dt>
+                        <dd>
+                            <span class="current-price">￥680</span>
+                            <span class="original-price">|￥1200</span>
+                            <div class="input-group">
+                                <div class="input-group-addon">-</div>
+                                <input type="text" class="form-control input-sm" value="1">
+                                <div class="input-group-addon">+</div>
+                            </div>
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+        <div class="fixed-toolbar">
+            合计：<span class="price">￥1440</span>
+            为您节省：<span class="price">￥1060</span>
+            <a href="#" class="btn btn-success pull-right">去结算</a>
+        </div>
+        <!--如果购物车为空-->
+        <!--
+        <div id="emptyPanel">
+            <p><i class="iconfont icon-gouwuchekong"></i></p>
+            <p>购物车还是空的，去挑几件中意的商品吧！</p>
+            <p><a href="#" class="btn btn-success">现在就去逛逛</a></p>
+        </div>
+        -->
+        <script src="http://cdn01.360guanai.com/apps/m.360guanai.com/js/app.min.js"></script>
+        <script data-main="http://cdn01.360guanai.com/apps/m.360guanai.com/js/cart/index.min.js" src="http://cdn01.360guanai.com/guanaihui/js/require.min.js"></script>
+    </body>
+</html>

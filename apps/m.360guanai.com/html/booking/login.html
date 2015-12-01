@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>卡号密码登录 - 关爱体检通</title>
+        <meta name="keywords" content="上海企业体检,上海体检团购,上海体检预约,上海体检套餐,上海体检医院">
+        <meta name="description" content="关爱体检通是全国首家知名体检中心指定服务平台，支持爱康国宾、瑞慈、美年大健康、慈铭等体检中心和长海医院、东方医院、曙光医院、瑞金医院等体检医院。低于团购，欢迎企业及个人咨询400-728-7289"> 
+        <!-- 引入stylesheet资源 -->
+        <link rel="stylesheet" href="//cdn01.360guanai.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        
+        <link rel="stylesheet" href="http://cdn01.360guanai.com/apps/m.360guanai.com/css/app.min.css">
+        <link rel="stylesheet" href="http://cdn01.360guanai.com/apps/m.360guanai.com/css/booking/login.min.css"> 
+    </head>
+    <body>
+        <h3>欢迎来到 <img src="//cdn04.360guanai.com/guanaihui/css/images/logo-14840-reverse.png"></h3>
+        <div id="loginTypeHandle">
+            <div class="btn-group btn-group-justified" aria-label="Justified button group" role="group">
+                <a class="btn btn-success" role="button" href="javascript:" for="card">使用体检卡登录</a>
+                <a class="btn btn-default" role="button" href="javascript:" for="cert">使用证件号登录</a>            
+            </div>
+        </div>
+        <form action="options.html">
+            <div class="card tabs-frame">
+                <dl>
+                    <dt><i class="iconfont icon-zhanghu"></i></dt>
+                    <dd><input type="text" class="transparent ime-disabled" name="cardNo" placeholder="请输入体检卡号" size="12" maxlength="11"></dd>                
+                </dl>
+                <dl>
+                    <dt><i class="iconfont icon-michi"></i></dt>
+                    <dd><input type="password" class="transparent ime-disabled" name="password" placeholder="请输入密码" size="12" maxlength="6"></dd>
+                </dl>
+            </div>
+            <div class="cert tabs-frame">
+                <dl>
+                    <dt><i class="iconfont icon-zhanghu"></i></dt>
+                    <dd><input type="text" class="transparent ime-disabled" name="certNo" placeholder="请输入证件号" size="12"></dd>                
+                </dl>
+                <dl>
+                    <dt><i class="iconfont icon-guanliyuan"></i></dt>
+                    <dd><input type="text" class="transparent ime-disabled" name="realName" placeholder="请输入真实姓名" size="12"></dd>
+                </dl>
+            </div>
+            <button type="submit" class="btn btn-success btn-lg btn-block">登录</button>
+        </form>
+        <script src="http://cdn01.360guanai.com/apps/m.360guanai.com/js/app.min.js"></script>
+        <script data-main="http://cdn01.360guanai.com/apps/m.360guanai.com/js/booking/login.min.js" src="http://cdn01.360guanai.com/guanaihui/js/require.min.js"></script>
+    </body>
+</html>

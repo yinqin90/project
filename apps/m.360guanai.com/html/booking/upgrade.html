@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>套餐升级 - 关爱体检通</title>
+        <meta name="keywords" content="企业体检,体检团购,体检预约,体检套餐,体检医院">
+        <meta name="description" content="关爱体检通是全国首家知名体检中心指定服务平台，支持爱康国宾、瑞慈、美年大健康、慈铭等体检中心和长海医院、东方医院、曙光医院、瑞金医院等体检医院。低于团购，欢迎企业及个人咨询400-728-7289"> 
+        <!-- 引入stylesheet资源 -->
+        <link rel="stylesheet" href="//cdn01.360guanai.com/bootstrap/3.3.4/css/bootstrap.min.css">        
+        <link rel="stylesheet" href="http://cdn01.360guanai.com/apps/m.360guanai.com/css/app.min.css">
+        <link rel="stylesheet" href="http://cdn01.360guanai.com/apps/m.360guanai.com/css/booking/upgrade.min.css"> 
+    </head>
+    <body>
+        <!--查看套餐体检项目的图层-->
+        <div class="float-window" id="checkItemsWindow">
+            <div class="text-right float-window-header"><a href="javascript:void(0);" class="btn btn-default btn-sm retract">关闭</a></div>
+            <div class="float-window-body"></div>
+        </div>
+        <!--查看套餐体检项目的图层-->
+        <div class="float-window" id="supportStoreWindow">
+            <div class="text-right float-window-header"><a href="javascript:void(0);" class="btn btn-default btn-sm retract">关闭</a></div>
+            <div class="float-window-body"></div>
+        </div>
+        <!--头部logo|搜索|定位-->
+        <header>
+            <a href="javascript:history.back();" class="back"><i class="iconfont icon-fanhui"></i></a>                   
+            <h1>套餐升级</h1>
+        </header>
+        <div class="portal v-gap tabs list" id="originalSuit">
+            <ul class="tabs-handle">
+                <li class="on">您的当前套餐</li>  
+            </ul>
+            <dl class="clearfix">
+                <dt><img src="//cdn15.360guanai.com/apps/m.360guanai.com/css/images/samplePict2.jpg" alt=" C套餐(上海版)"></dt>
+                <dd>卡号：1QX20200005</dd>                        
+                <dd>当前套餐：全新版 套餐一</dd>
+                <dd>套餐类型：年度体检</dd>
+                <dd>套餐价格：<span class="price">￥325</span></dd>
+                <dd>有效期：2015.10.01</dd>
+            </dl> 
+            <div class="tools">
+                <a href="javascript:void(0);" class="btn btn-default btn-sm items" data-href="../product/items.html">查看体检项目</a>
+                <a href="javascript:void(0);" class="btn btn-default btn-sm cancel">想想再升级</a>
+            </div>
+        </div>
+        <div id="bridge"><i class="iconfont icon-yunxiazai"></i> 升级到</div>
+        <div class="portal tabs" id="destinationSuit">
+            <ul class="tabs-handle">
+                <li class="on">套餐过滤</li>
+                <li>目标套餐</li>
+            </ul>
+            <div class="tabs-frame filter-panel">
+                <!--过滤条件按钮组-->                
+                <ul>
+                    <li class="dropdown">
+                        <a class="item dropdown-toggle btn btn-default" data-toggle="dropdown">
+                           <div class="handle"><i class="iconfont icon-xiangxia2"></i></div>
+                            <div class="selected-label">版本</div>                    
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">北京版</a></li>
+                            <li><a href="#">上海版</a></li>
+                            <li><a href="#">广州版</a></li>                    
+                            <li><a href="#">深圳版</a></li>
+                            <li><a href="#">成都版</a></li>
+                        </ul>
+                    </li>            
+                    <li class="dropdown">
+                        <a class="item dropdown-toggle btn btn-default" data-toggle="dropdown">
+                            <div class="handle"><i class="iconfont icon-xiangxia2"></i></div>
+                            <div class="selected-label">类型</div>                    
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">年度体检</a></li>
+                            <li><a href="#">高端体检</a></li>
+                            <li><a href="#">医院体检</a></li>                    
+                            <li><a href="#">入职体检</a></li>                    
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0);" class="btn btn-success btn-sm" id="searchBtn">开始过滤</a></li>
+                </ul>                
+            </div>            
+            <!--选中某个套餐后显示的html-->
+            <div  class="tabs-frame list">
+                <dl class="clearfix">
+                    <dt><img src="//cdn15.360guanai.com/apps/m.360guanai.com/css/images/samplePict1.jpg" alt=" VIP套餐(上海版)"></dt>
+                    <dd>卡号：1QX20200005</dd>                        
+                    <dd>当前套餐：全新版 套餐一</dd>
+                    <dd>套餐类型：年度体检</dd>
+                    <dd><span class="price">￥325</span><span>，需补差价：</span><span class="text-danger">￥645</span></dd>
+                    <dd>有效期：2015.10.01</dd>
+                </dl>
+                <div class="tools">
+                    <a href="#" class="btn btn-default btn-sm" id="reFilter">重新过滤</a>
+                    <a data-href="../product/items.html" class="btn btn-default btn-sm items">查看体检项目</a>
+                    <a href="#" class="btn btn-success btn-sm">下一步：预约时间</a>                   
+                </div>
+            </div>
+        </div>
+        <!--过滤结果显示-->
+        <div id="filterResult" class="list portal">
+            <!--一个套餐的循环从这里开始-->
+            <dl class="clearfix">
+                <dt>
+                    <img src="//cdn15.360guanai.com/apps/m.360guanai.com/css/images/samplePict1.jpg" alt=" C套餐(上海版)">
+                    <h3>B套餐(上海版)</h3>
+                </dt>                
+                <dd>
+                    <ul>
+                        <li class="caption">相比您当前套餐增加项目：</li>
+                        <li><i class="iconfont icon-jia"></i>皮肤,浅表淋巴结,甲状腺,乳房</li>
+                        <li><i class="iconfont icon-jia"></i>眼底检查</li>
+                        <li><i class="iconfont icon-jia"></i>乳腺彩超</li>
+                        <li><i class="iconfont icon-jia"></i>...</li>
+                    </ul>
+                </dd>
+                <dd class="text-danger">需补差价：￥1200</dd>
+            </dl>
+            <div class="tools">
+                <a href="javascript:void(0);" data-href="../product/supportStore.html" class="support-stores">支持门店</a>
+                <a href="javascript:void(0);" data-href="../product/items.html" class="items">所有项目</a>
+                <a href="javascript:void(0);" class="btn btn-default btn-sm upgrade" data-id="1">升级到该套餐</a>
+            </div>
+            <!--一个套餐的循环到这里结束-->
+            <dl class="clearfix">
+                <dt>
+                    <img src="//cdn15.360guanai.com/apps/m.360guanai.com/css/images/samplePict2.jpg" alt=" C套餐(上海版)">
+                    <h3>B套餐(上海版)</h3>
+                </dt>                
+                <dd>
+                    <ul>
+                        <li class="caption">相比您当前套餐增加项目：</li>
+                        <li><i class="iconfont icon-jia"></i>皮肤,浅表淋巴结,甲状腺,乳房</li>
+                        <li><i class="iconfont icon-jia"></i>眼底检查</li>
+                        <li><i class="iconfont icon-jia"></i>乳腺彩超</li>
+                        <li><i class="iconfont icon-jia"></i>...</li>
+                    </ul>
+                </dd>
+                <dd class="text-danger">需补差价：￥1200</dd>
+            </dl>
+            <div class="tools">
+                <a href="javascript:void(0);" data-href="../product/supportStore.html" class="support-stores">支持门店</a>
+                <a href="javascript:void(0);" data-href="../product/items.html" class="items">所有项目</a>
+                <a href="javascript:void(0);" class="btn btn-default btn-sm upgrade" data-id="2">升级到该套餐</a>
+            </div>
+            <dl class="clearfix">
+                <dt>
+                    <img src="//cdn15.360guanai.com/apps/m.360guanai.com/css/images/samplePict3.jpg" alt=" C套餐(上海版)">
+                    <h3>B套餐(上海版)</h3>
+                </dt>                
+                <dd>
+                    <ul>
+                        <li class="caption">相比您当前套餐增加项目：</li>
+                        <li><i class="iconfont icon-jia"></i>皮肤,浅表淋巴结,甲状腺,乳房</li>
+                        <li><i class="iconfont icon-jia"></i>眼底检查</li>
+                        <li><i class="iconfont icon-jia"></i>乳腺彩超</li>
+                        <li><i class="iconfont icon-jia"></i>...</li>
+                    </ul>
+                </dd>
+                <dd class="text-danger">需补差价：￥1200</dd>
+            </dl>
+            <div class="tools">
+                <a href="javascript:void(0);" data-href="../product/supportStore.html" class="support-stores">支持门店</a>
+                <a href="javascript:void(0);" data-href="../product/items.html" class="items">所有项目</a>
+                <a href="javascript:void(0);" class="btn btn-default btn-sm upgrade" data-id="3">升级到该套餐</a>
+            </div>
+        </div>
+        <!--脚部辅助导航|APP下载入口|版权信息-->
+        <footer>            
+            <div id="appStore">
+                <a class="btn btn-default btn-xs" href="http://www.360guanai.com"><i class="iconfont icon-xianshiqi"></i>电脑版</a>
+                <a class="btn btn-default btn-xs" href="https://itunes.apple.com/cn/app/guan-ai-hui/id1036167230?mt=8" download="关爱汇.ipa"><i class="iconfont icon-pingguo"></i>APP Store</a>                
+                <a href="http://mobile-app.oss-cn-hangzhou.aliyuncs.com/download/android/guanaihui_v1.1.0.apk" class="btn btn-success btn-xs" download="关爱汇.apk"><i class="iconfont icon-anzhuo"></i>Android</a>
+            </div>
+            <div id="copyright">
+                <p>
+                    <span>一站式体检专家</span>
+                    <span class="arial">www.360guanai.com</span>
+                </p>
+                <p>
+                    <span class="arial">©2008-2015</span> 
+                    <span>关爱体检通 版权所有</span>
+                </p>
+            </div>
+        </footer>
+        <script src="http://cdn01.360guanai.com/apps/m.360guanai.com/js/app.min.js"></script>
+        <script data-main="http://cdn01.360guanai.com/apps/m.360guanai.com/js/booking/upgrade.min.js" src="http://cdn01.360guanai.com/guanaihui/js/require.min.js"></script>
+    </body>
+</html>

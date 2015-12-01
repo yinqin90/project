@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>医疗机构_三甲医院 - 关爱汇</title>
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <!--禁止浏览器在本地计算机缓存当前页面-->
+        <meta http-equiv="pragma" content="no-cache">
+        <meta http-equiv="cache-control" content="no-cache">
+        <meta http-equiv="expires" content="0">
+        <!-- 引入Bootstrap框架的stylesheet资源 -->
+        <link rel="stylesheet" href="//dev01.guanaihui.cn/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//dev15.guanaihui.cn/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="//dev08.guanaihui.cn/apps/www.guanaihui.com/css/app.min.css">
+        <link rel="stylesheet" href="//dev19.guanaihui.cn/apps/www.guanaihui.com/css/institution/detail-institution.min.css">
+        <!--[if lte IE 6]>
+        <link rel="stylesheet" type="text/css" href="//dev14.guanaihui.cn/bootstrap/plugins/bsie/bootstrap-ie6.min.css">
+        <link rel="stylesheet" type="text/css" href="//dev06.guanaihui.cn/bootstrap/plugins/bsie/ie.min.css">
+        <![endif]-->
+    </head>
+
+    <body>
+        <!--页面顶部条-->
+        <div class="toper">
+            <div class="container clearfix">
+                <div class="pull-left">
+                    <a href="#">手机客户端</a>
+                    <a href="#">关于我们</a>
+                </div>
+                <div class="pull-right">
+                    <a href="#">登录</a>
+                    <a href="#">注册</a>
+                    <a href="#">会员中心</a>
+                    <a href="#">企业专区</a>
+                </div>
+            </div>
+        </div>
+        <!--头部区域-->
+        <div class="header container">
+            <div class="logo-location">
+                <img src="//dev18.guanaihui.cn/guanaihui/css/images/guanaihui-20077.png" alt="关爱汇logo">
+                <a href="javascript:void(0);">
+                    <span class="location">上海</span>
+                    <span class="caret"></span>
+                </a>
+            </div>
+            <dl class="hotline">
+                <dt>全国免费咨询热线</dt>
+                <dd>400-728-7289</dd>
+            </dl>
+            <div class="searcher-container">
+                <ul class="searcher">
+                    <li class="submit"><button type="submit" class="transparent">搜索</button></li>
+                    <li class="enter"><input type="text" placeholder="输入机构名称" class="transparent"></li>
+                </ul>
+            </div>
+        </div>
+        <!--导航区域-->
+        <div class="navigator-bar">
+            <dl class="container">
+                <dt>
+                    <span>全部服务分类</span>
+                    <i class="iconfont icon-xiangxia2 pull-right"></i>
+                    <!--这里开始是服务分类菜单-->
+                <ul class="services-category">
+                    <li>
+                        <a href="#">
+                            <i class="icon-24 icon-24-tjjg-white"></i>
+                            <span>体检机构</span>
+                            <div class="deputy">
+                                <span>年度体检</span>
+                                <i class="iconfont icon-xiangyou3"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-24 icon-24-zkjg-white"></i>
+                            <span>专科机构</span>
+                            <div class="deputy">
+                                <span>男性 女性</span>
+                                <i class="iconfont icon-xiangyou3"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-24 icon-24-mrys-white"></i>
+                            <span>美容养生</span>
+                            <div class="deputy">
+                                <span>SPA</span>
+                                <i class="iconfont icon-xiangyou3"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-24 icon-24-kqhl-white"></i>
+                            <span>口腔护理</span>
+                            <div class="deputy">
+                                <span>换牙 洗牙</span>
+                                <i class="iconfont icon-xiangyou3"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-24 icon-24-zxss-white"></i>
+                            <span>整形塑身</span>
+                            <div class="deputy">
+                                <span>整容</span>
+                                <i class="iconfont icon-xiangyou3"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-24 icon-24-zytl-white"></i>
+                            <span>中医调理</span>
+                            <div class="deputy">
+                                <span>中医理疗</span>
+                                <i class="iconfont icon-xiangyou3"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-24 icon-24-kjph-white"></i>
+                            <span>康健陪护</span>
+                            <div class="deputy">
+                                <span>护理 月子中心</span>
+                                <i class="iconfont icon-xiangyou3"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-24 icon-24-glyl-white"></i>
+                            <span>公立医疗</span>
+                            <div class="deputy">
+                                <span>三甲医院</span>
+                                <i class="iconfont icon-xiangyou3"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <!--服务分类子菜单区域-->
+                    <li class="services-category-children">
+                        <div class="tabs-frame">
+                            <p class="child-category">
+                                <a href="#">肛肠科</a>
+                                <a href="#">皮肤科</a>
+                                <a href="#">五官科</a>
+                                <a href="#">儿科</a>
+                                <a href="#">男科</a>
+                                <a href="#">妇产科</a>
+                                <a href="#">神经科</a>
+                                <a href="#">骨科</a>
+                                <a href="#">内分泌科</a>
+                            </p>
+                            <p class="top-gap"><a href="#"><img src="http://www.atool.org/placeholder.png?size=700x150&bg=8bc93c&fg=fff"></a></p>
+                        </div>
+                        <div class="tabs-frame">
+                            <p class="child-category">
+                                <a href="#">科室1</a>
+                                <a href="#">科室2</a>
+                                <a href="#">科室3</a>
+                                <a href="#">科室4</a>
+                                <a href="#">科室5</a>
+                                <a href="#">科室6</a>
+                                <a href="#">科室7</a>
+                                <a href="#">科室8</a>
+                                <a href="#">科室9</a>
+                            </p>
+                            <p class="top-gap"><a href="#"><img src="http://www.atool.org/placeholder.png?size=700x150&bg=8bc93c&fg=fff"></a></p>
+                        </div>
+                        <div class="tabs-frame">
+                            <p class="child-category">
+                                <a href="#">科室1</a>
+                                <a href="#">科室2</a>
+                                <a href="#">科室3</a>
+                                <a href="#">科室4</a>
+                                <a href="#">科室5</a>
+                                <a href="#">科室6</a>
+                                <a href="#">科室7</a>
+                                <a href="#">科室8</a>
+                                <a href="#">科室9</a>
+                            </p>
+                            <p class="top-gap"><a href="#"><img src="http://www.atool.org/placeholder.png?size=700x150&bg=8bc93c&fg=fff"></a></p>
+                        </div>
+                        <div class="tabs-frame">
+                            <p class="child-category">
+                                <a href="#">科室1</a>
+                                <a href="#">科室2</a>
+                                <a href="#">科室3</a>
+                                <a href="#">科室4</a>
+                                <a href="#">科室5</a>
+                                <a href="#">科室6</a>
+                                <a href="#">科室7</a>
+                                <a href="#">科室8</a>
+                                <a href="#">科室9</a>
+                            </p>
+                            <p class="top-gap"><a href="#"><img src="http://www.atool.org/placeholder.png?size=700x150&bg=8bc93c&fg=fff"></a></p>
+                        </div>
+                        <div class="tabs-frame">
+                            <p class="child-category">
+                                <a href="#">科室1</a>
+                                <a href="#">科室2</a>
+                                <a href="#">科室3</a>
+                                <a href="#">科室4</a>
+                                <a href="#">科室5</a>
+                                <a href="#">科室6</a>
+                                <a href="#">科室7</a>
+                                <a href="#">科室8</a>
+                                <a href="#">科室9</a>
+                            </p>
+                            <p class="top-gap"><a href="#"><img src="http://www.atool.org/placeholder.png?size=700x150&bg=8bc93c&fg=fff"></a></p>
+                        </div>
+                        <div class="tabs-frame">
+                            <p class="child-category">
+                                <a href="#">科室1</a>
+                                <a href="#">科室2</a>
+                                <a href="#">科室3</a>
+                                <a href="#">科室4</a>
+                                <a href="#">科室5</a>
+                                <a href="#">科室6</a>
+                                <a href="#">科室7</a>
+                                <a href="#">科室8</a>
+                                <a href="#">科室9</a>
+                            </p>
+                            <p class="top-gap"><a href="#"><img src="http://www.atool.org/placeholder.png?size=700x150&bg=8bc93c&fg=fff"></a></p>
+                        </div>
+                        <div class="tabs-frame">
+                            <p class="child-category">
+                                <a href="#">科室1</a>
+                                <a href="#">科室2</a>
+                                <a href="#">科室3</a>
+                                <a href="#">科室4</a>
+                                <a href="#">科室5</a>
+                                <a href="#">科室6</a>
+                                <a href="#">科室7</a>
+                                <a href="#">科室8</a>
+                                <a href="#">科室9</a>
+                            </p>
+                            <p class="top-gap"><a href="#"><img src="http://www.atool.org/placeholder.png?size=700x150&bg=8bc93c&fg=fff"></a></p>
+                        </div>
+                        <div class="tabs-frame">
+                            <p class="child-category">
+                                <a href="#">科室1</a>
+                                <a href="#">科室2</a>
+                                <a href="#">科室3</a>
+                                <a href="#">科室4</a>
+                                <a href="#">科室5</a>
+                                <a href="#">科室6</a>
+                                <a href="#">科室7</a>
+                                <a href="#">科室8</a>
+                                <a href="#">科室9</a>
+                            </p>
+                            <p class="top-gap"><a href="#"><img src="http://www.atool.org/placeholder.png?size=700x150&bg=8bc93c&fg=fff"></a></p>
+                        </div>
+                    </li>
+                    <!--子菜单到这里结束-->
+                </ul>
+                <!--服务分类菜单到这结束-->
+                </dt>
+                <dd>
+                    <a href="#">首页</a>
+                    <a href="#">今日特惠</a>
+                </dd>
+            </dl>
+        </div>
+        <!--面包屑-->
+        <div class="path-navigation container">
+            <a href="#">关爱汇</a>
+            <span class="simsun"> &gt; </span>
+            <a href="#">专科机构</a>
+        </div>
+        <!-- 机构信息 -->
+        <div id="infoContainer" class="container row">
+            <div id="instInfo" class="col-xs-6">
+                <div id="title">
+                    <h1>美年大健康</h1>
+                    <i class="app-icon app-icon-vip">V</i>
+                    <span class="userflag">诚信用户</span>
+                </div>
+                <div id="qualityBox" class="info-row">
+                    <div id="score" class="score">
+                        <i class="star star-45"></i>
+                        <span>4.3</span>
+                    </div>
+                    <ul id="quality">
+                        <li>环境&nbsp;:&nbsp;8.1</li>
+                        <li>服务&nbsp;:&nbsp;9.5</li>
+                        <li class="no-margin">效果&nbsp;:&nbsp;9.2</li>
+                    </ul>
+                </div>
+                <hr/>
+                <p>一句话介绍。一句话介绍。一句话介绍。一句话介绍。一句话介绍。一句话介绍。</p>
+                <ul id="discount" class="info-row">
+                    <li>
+                        <div class="red-tag">到店礼<span></span></div>
+                        到店即送组合大礼包一份
+                    </li>
+                    <li>
+                        <div class="green-tag">优惠检<span></span></div>
+                        通过关爱汇预定，获得优惠检查服务
+                    </li>
+                </ul>
+                <dl id="tags" class="info-row prop">
+                    <dt>特色&nbsp;:&nbsp;</dt>
+                    <dd>
+                        <span class="no-margin">补牙</span>
+                        <span>镶牙</span>
+                        <span>烤瓷牙</span>
+                    </dd>
+                </dl>
+                <dl id="checkItemDesc" class="info-row prop">
+                    <dt>基础检查&nbsp;:&nbsp;</dt>
+                    <dd>
+                        <span class="no-margin">显示全部门店支持项目</span>
+                    </dd>
+                </dl>
+                <dl id="checkItemBox" class="info-row prop">
+                    <dt></dt>
+                    <dd>
+                        <ul class="checkItemList">
+                            <li>
+                                <img src="http://www.atool.org/placeholder.png?size=130x100&bg=8bc93c&fg=fff" alt="口腔基础检查"/>
+                                <div class="item-content">
+                                    <h4>口腔基础检查</h4>
+                                    <p>
+                                        支持<span>徐汇店</span>
+                                    </p>
+                                </div>
+                                <div class="item-price">
+                                    <p><span class="money-icon">￥</span><span>100</span></p>
+                                    <p><span class="money-icon">￥</span><span>500</span></p>
+                                    <p>立即预约</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+
+            <div class="col-xs-6">
+                <div class="viewer">
+                    <img src="http://www.atool.org/placeholder.png?size=548x342&bg=8bc93c&fg=fff" alt="美年大健康"/>
+                </div>
+                <div class="inst-img-box">
+                    <div class="controller prev"><i class="iconfont icon-fanhui"></i></div>
+                    <div class="controller next"><i class="iconfont icon-xiangyou3"></i></div>
+                    <div class="content">
+                        <div class="item"><img src="http://www.atool.org/placeholder.png?size=115x75&bg=8bc93c&fg=fff" alt="美年大健康"/></div>
+                        <div class="item"><img src="http://www.atool.org/placeholder.png?size=115x75&bg=8bc93c&fg=fff" alt="美年大健康"/></div>
+                        <div class="item"><img src="http://www.atool.org/placeholder.png?size=115x75&bg=8bc93c&fg=fff" alt="美年大健康"/></div>
+                        <div class="item"><img src="http://www.atool.org/placeholder.png?size=115x75&bg=8bc93c&fg=fff" alt="美年大健康"/></div>
+                        <div class="item"><img src="http://www.atool.org/placeholder.png?size=115x75&bg=8bc93c&fg=fff" alt="美年大健康"/></div>
+                        <div class="item"><img src="http://www.atool.org/placeholder.png?size=115x75&bg=8bc93c&fg=fff" alt="美年大健康"/></div>
+                        <div class="item"><img src="http://www.atool.org/placeholder.png?size=115x75&bg=8bc93c&fg=fff" alt="美年大健康"/></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 地图 门店列表 机构详情 -->
+        <div id="descContainer">
+            <ul id="menu" class="container">
+                <li>机构介绍</li>
+            </ul>
+            <div id="body" class="container">
+                <!-- 地图 门店列表 -->
+                <div id="instList">
+                    <!-- 地图 -->
+                    <div id="baiduMapContainer"></div>
+                    <div id="list">
+                        <!-- 筛选门店 -->
+                        <dl class="inst-select">
+                            <dt>门店筛选&nbsp;:&nbsp;</dt>
+                            <dd>共5家门店</dd>
+                            <dd>
+                                <select>
+                                    <option>全部地区</option>
+                                </select>
+                            </dd>
+                        </dl>
+                        <!-- 门店列表 -->
+                        <ul>
+                            <li class="selected">
+                                <dl>
+                                    <dt>营业时间&nbsp;:&nbsp;10:00~20:00</dt>
+                                    <dd>
+                                        摩尔口腔摩尔口腔摩尔口腔摩尔口腔(徐汇店)
+                                    </dd>
+                                </dl>
+                                <p class="address">天阴桥路234号</p>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>营业时间&nbsp;:&nbsp;10:00~20:00</dt>
+                                    <dd>摩尔口腔</dd>
+                                </dl>
+                                <p class="address">天阴桥路234号天阴桥路234号天阴桥路234号天阴桥路234号天阴桥路234号天阴桥路234号</p>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>营业时间&nbsp;:&nbsp;10:00~20:00</dt>
+                                    <dd>摩尔口腔</dd>
+                                </dl>
+                                <p class="address">天阴桥路234号</p>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>营业时间&nbsp;:&nbsp;10:00~20:00</dt>
+                                    <dd>摩尔口腔</dd>
+                                </dl>
+                                <p class="address">天阴桥路234号</p>
+                            </li>
+                        </ul>
+                        <!-- 交通信息 -->
+                        <h4>交通信息</h4>
+                        <p><i class="app-icon app-icon-parking">P</i>付费停车场 10元/小时</p>
+                        <p><i class="iconfont icon-tielu"></i>地铁2号线 徐家汇站 5号口出</p>
+                        <p><i class="iconfont icon-daba"></i>公交18、120、111、109</p>
+                    </div>
+
+                </div>
+                <!-- cms内容 -->
+                <div id="instDetails">
+                    <img src="http://www.atool.org/placeholder.png?size=1200x600&bg=fff&fg=8bc93c"/>
+                </div>
+            </div>
+        </div>
+        <!--app下载区-->
+        <div class="app-download">
+            <dl class="hotline">
+                <dt>全国免费咨询热线</dt>
+                <dd class="tel">400-728-7289</dd>
+                <dd class="memo">人群化，针对性的专属健康方案</dd>
+            </dl>
+            <dl>
+                <dt>关爱汇APP</dt>
+                <dd><img src="//dev18.guanaihui.cn/guanaihui/css/images/app-qrcode.jpg" alt="关爱汇APP二维码"></dd>
+            </dl>
+            <dl>
+                <dt>关爱汇微信</dt>
+                <dd><img src="//dev18.guanaihui.cn/guanaihui/css/images/webchat-qrcode.jpg" alt="关爱汇APP二维码"></dd>
+            </dl>
+        </div>
+        <!--页脚区域-->
+        <div class="footer container">
+            <span class="dbc-case">&copy; 2015</span>
+            <span>关爱汇</span>
+            <span class="dbc-case">All rights reserved.</span>
+            <span>沪</span>
+            <span class="dbc-case">ICP</span>
+            <span>备</span>
+            <span class="dbc-case">20150311-9</span>
+            <span>号</span>
+        </div>
+        <!--[if IE 6]>
+        <script src="//dev18.guanaihui.cn/guanaihui/js/compatible/DD_belatedPNG_0.0.8a-min.js"></script>
+        <script> DD_belatedPNG.fix('.pngfix'); </script>
+        <script type=”text/javascript”>
+        // <![CDATA[
+        if((window.navigator.appName.toUpperCase().indexOf("MICROSOFT")>=0)&&(document.execCommand))
+        try{
+        document.execCommand("BackgroundImageCache", false, true);
+        }
+        catch(e){}
+        // ]]>
+        </script>
+        <![endif]-->
+        <!--[if lte IE 6]>
+        <script type="text/javascript" src="//dev04.guanaihui.cn/bootstrap/plugins/bsie/bootstrap-ie.min.js"></script>
+        <![endif]-->
+        <!--[if lt IE 9]>
+        <script src="//dev02.guanaihui.cn/guanaihui/js/compatible/html5shiv.min.js"></script>
+        <script src="//dev13.guanaihui.cn/guanaihui/js/compatible/respond.min.js"></script>
+        <script src="//dev09.guanaihui.cn/guanaihui/js/compatible/ie8-responsive-file-warning.min.js"></script>
+        <![endif]-->
+        <script src="//dev13.guanaihui.cn/apps/www.guanaihui.com/js/app.min.js"></script>
+        <script src="//api.map.baidu.com/api?v=2.0&ak=BEm3QqhKB4GIZVNhqjlB1wZI"></script>
+        <script data-main="//dev07.guanaihui.cn/apps/www.guanaihui.com/js/institution/detail.min.js" src="//dev12.guanaihui.cn/guanaihui/js/require.min.js"></script>
+    </body>
+</html>

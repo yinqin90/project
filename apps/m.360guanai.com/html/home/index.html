@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>首页 - 关爱体检通</title>
+        <meta name="keywords" content="上海企业体检,上海体检团购,上海体检预约,上海体检套餐,上海体检医院">
+        <meta name="description" content="关爱体检通是全国首家知名体检中心指定服务平台，支持爱康国宾、瑞慈、美年大健康、慈铭等体检中心和长海医院、东方医院、曙光医院、瑞金医院等体检医院。低于团购，欢迎企业及个人咨询400-728-7289"> 
+        <!-- 引入stylesheet资源 -->
+        <link rel="stylesheet" href="//cdn01.360guanai.com/bootstrap/3.3.4/css/bootstrap.min.css">        
+        <link rel="stylesheet" href="//cdn01.360guanai.com/apps/m.360guanai.com/css/app.min.css">
+        <link rel="stylesheet" href="//cdn01.360guanai.com/apps/m.360guanai.com/css/home/index.min.css"> 
+    </head>
+    <body>
+        <!--头部logo|搜索|定位-->
+        <header>
+            <a href="/" class="logo"><img src="//cdn01.360guanai.com/guanaihui/css/images/logo-10030-reverse.png" alt="关爱体检通logo"></a>
+            <div class="location">
+                <a href="region.html"><span>上海</span><i class="triangle-down"></i></a>                
+            </div>
+            <div class="btn-group btn-group-xs assistant-tools" aria-label="Default button group" role="group">
+                <button class="btn btn-success search" type="button"><i class="iconfont icon-sousuo"></i></button>                            
+            </div>                     
+        </header>
+        <!--原生APP下载-->
+        <div id="appDownload">
+            <a class="btn btn-default btn-sm pull-right" href="https://itunes.apple.com/cn/app/guan-ai-hui/id1036167230?mt=8" download="关爱汇.ipa">立即安装</a>
+            <dl>
+                <dt><img src="//cdn01.360guanai.com/guanaihui/css/images/app.png" alt="关爱体检通app"></dt>
+                <dd class="text-success">更快！更多优惠套餐！</dd>
+                <dd>上客户端看</dd>
+            </dl>            
+        </div>
+        <!--热门活动banner条-->
+        <div class="swiper-container" id="banner">
+            <div class="swiper-wrapper">
+                <a class="swiper-slide" href="#"><img src="//cdn16.360guanai.com/apps/m.360guanai.com/css/images/banner1.jpg" class="img-responsive" alt=""></a>                                                             
+            </div>            
+            <div class="swiper-pagination"></div>            
+        </div>
+        <!--搜索框-->
+        <div id="searcher">
+            <ul>
+                <li class="addon"><i class="iconfont icon-sousuo"></i></li>                
+                <li class="keywords"><input type="text" name="keywords" placeholder="体检套餐/体检中心" class="transparent"></li>
+            </ul>
+        </div>
+        <!--卡片式网站导航-->
+        <ul id="cardNav" class="portal">
+            <li>
+                <a href="//cdn01.360guanai.com/apps/m.360guanai.com/html/healthCheckupStore/list.html" class="store-series">
+                    <i class="iconfont icon-dianpu2"></i>
+                    <span>体检门店</span>
+                </a>
+            </li>
+            <li>
+                <a href="//cdn01.360guanai.com/apps/m.360guanai.com/html/product/list.html" class="store-series">
+                    <i class="iconfont icon-quan"></i>
+                    <span>门店套餐</span>
+                </a>
+            </li>            
+            <li>
+                <a href="//cdn01.360guanai.com/apps/m.360guanai.com/html/card/list.html" class="card-series">
+                    <i class="iconfont icon-zhanghu"></i>
+                    <span>体检卡</span>
+                </a>
+            </li>
+            <li>
+                <a href="//cdn01.360guanai.com/apps/m.360guanai.com/html/booking/login.html" class="card-series">
+                    <i class="iconfont icon-renzhengyonghu"></i>
+                    <span>卡登录</span>
+                </a>
+            </li>
+            <li>
+                <a href="//cdn01.360guanai.com/apps/m.360guanai.com/html/special/overseasIndex.html" class="activity-series">
+                    <i class="iconfont icon-huangguan1"></i>
+                    <span>高端体检</span>
+                </a>
+            </li>
+            <li>
+                <a href="../special/familyHome2.html" class="activity-series">
+                    <i class="iconfont icon-keai"></i>
+                    <span>关爱亲人</span>
+                </a>
+            </li>            
+            <li>
+                <a href="../special/cancerHome.html" class="activity-series">
+                    <i class="iconfont icon-yiyaoxiang"></i>
+                    <span>远离癌症</span>
+                </a>
+            </li>
+            <li>
+                <a href="//cdn01.360guanai.com/apps/m.360guanai.com/html/special/overseasIndex.html" class="activity-series">
+                    <i class="iconfont icon-shangjiaqun"></i>
+                    <span>企业团体</span>
+                </a>
+            </li>
+        </ul>
+        <!--定制区域-->
+        <div id="customize" class="portal">            
+            <p>您有任何疑惑，可以点击拨打下面我们的服务热线：</p>
+            <a href="tel:4007287289" class="tel"><span class="addon"><i class="glyphicon glyphicon-earphone"></i></span> <span>400-728-7289</span></a>
+        </div>       
+        <!--套餐索引-->
+        <div id="suitIndex" class="portal v-gap tabs">
+            <ul class="tabs-handle">
+                <li class="on">套餐索引</li>                
+            </ul>
+            <div class="tabs-frame">
+                <dl>
+                    <dt>套餐类别：</dt>
+                    <dd>
+                        <a href="//cdn01.360guanai.com/apps/m.360guanai.com/html/suit/list.html" class="btn btn-danger btn-sm">年度体检</a>
+                        <a href="//cdn01.360guanai.com/apps/m.360guanai.com/html/suit/list.html" class="btn btn-danger btn-sm">高端体检</a>
+                        <a href="//cdn01.360guanai.com/apps/m.360guanai.com/html/suit/list.html" class="btn btn-danger btn-sm">入职体检</a>
+                        <a href="//cdn01.360guanai.com/apps/m.360guanai.com/html/suit/list.html" class="btn btn-danger btn-sm">婚育体检</a>
+                        <a href="//cdn01.360guanai.com/apps/m.360guanai.com/html/suit/list.html" class="btn btn-danger btn-sm">儿童体检</a>
+                        <a href="//cdn01.360guanai.com/apps/m.360guanai.com/html/suit/list.html" class="btn btn-danger btn-sm">癌症专查</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>套餐标签：</dt>
+                    <dd>
+                        <a href="//cdn01.360guanai.com/apps/m.360guanai.com/html/suit/list.html" class="btn btn-warning btn-sm">珍爱父母</a>
+                        <a href="//cdn01.360guanai.com/apps/m.360guanai.com/html/suit/list.html" class="btn btn-warning btn-sm">关爱女性</a>
+                        <a href="//cdn01.360guanai.com/apps/m.360guanai.com/html/suit/list.html" class="btn btn-warning btn-sm">公司福利</a>                                            
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>适合人群：</dt>
+                    <dd>
+                        <a href="//cdn01.360guanai.com/apps/m.360guanai.com/html/suit/list.html" class="btn btn-success btn-sm">男人</a>
+                        <a href="//cdn01.360guanai.com/apps/m.360guanai.com/html/suit/list.html" class="btn btn-success btn-sm">女人</a>
+                        <a href="//cdn01.360guanai.com/apps/m.360guanai.com/html/suit/list.html" class="btn btn-success btn-sm">老人</a>
+                        <a href="//cdn01.360guanai.com/apps/m.360guanai.com/html/suit/list.html" class="btn btn-success btn-sm">儿童</a>                        
+                    </dd>
+                </dl>                
+            </div>
+        </div>
+        <!--体检套餐-->
+        <div id="package" class="v-gap portal tabs">
+            <ul class="tabs-handle">
+                <li class="on">上海套餐推荐</li>
+                <li class="pull-right">
+                    <a href="//cdn01.360guanai.com/apps/m.360guanai.com/html/suit/list.html" class="more"><span>更多</span> <span class="simsun">></span></a>
+                </li>
+            </ul>
+            <div class="tabs-frame">
+                <a href="//cdn01.360guanai.com/apps/m.360guanai.com/html/suit/detail.html">
+                    <dl>                        
+                        <dt>VIP套餐(上海版)</dt>
+                        <dd><i class="iconfont icon-biaoqian"></i> 珍爱父母 远离癌症 高端体检</dd>
+                    </dl>
+                </a>
+                <a href="//cdn01.360guanai.com/apps/m.360guanai.com/html/suit/detail.html">
+                    <dl>                        
+                        <dt>A套餐(全新版)</dt>
+                        <dd><i class="iconfont icon-biaoqian"></i> 海外体检 入职神器 </dd>
+                    </dl>
+                </a>
+                <a href="//cdn01.360guanai.com/apps/m.360guanai.com/html/suit/detail.html">
+                    <dl>                        
+                        <dt>B套餐(上海版)</dt>
+                        <dd><i class="iconfont icon-biaoqian"></i> 珍爱父母 远离癌症 高端体检</dd>
+                    </dl>
+                </a>
+                <a href="//cdn01.360guanai.com/apps/m.360guanai.com/html/suit/detail.html">
+                    <dl>                        
+                        <dt>C套餐(上海版)</dt>
+                        <dd><i class="iconfont icon-biaoqian"></i> 珍爱父母 远离癌症 高端体检</dd>
+                    </dl>
+                </a>
+                <a href="//cdn01.360guanai.com/apps/m.360guanai.com/html/suit/detail.html">
+                    <dl>                        
+                        <dt>全新医院版</dt>
+                        <dd><i class="iconfont icon-biaoqian"></i> 珍爱父母 远离癌症 高端体检</dd>
+                    </dl>
+                </a>
+            </div>
+        </div>
+        <!--您身边的区域体检店-->
+        <div id="aroundStore" class="portal v-gap tabs">
+            <ul class="tabs-handle">
+                <li class="on">附近的上海体检店</li>
+            </ul>
+            <div class="tabs-frame">
+                <a href="//cdn01.360guanai.com/apps/m.360guanai.com/html/healthCheckupStore/detail.html">
+                    <dl>
+                        <dt>
+                            <img data-src="//cdn11.360guanai.com/apps/m.360guanai.com/css/images/samplePict6.jpg" class="lazy" alt="上海美年大健康">
+                            <p><i class="iconfont icon-dingxiang2"></i><span>小于 1 公里</span></p>                            
+                        </dt>
+                        <dd class="caption">上海美年大健康 小木桥总院</dd>
+                        <dd>上海市徐汇区小木桥路251号天亿大厦1-3层（近斜土路）</dd>                        
+                        <dd>公交：104路 隧道一线 128路 45路 89路 72路</dd>
+                        <dd>地铁：4号线大木桥路站，7号线、9号线肇嘉浜路</dd>
+                    </dl>
+                </a>
+                <a href="//cdn01.360guanai.com/apps/m.360guanai.com/html/healthCheckupStore/detail.html">
+                    <dl>
+                        <dt><img data-src="//cdn11.360guanai.com/apps/m.360guanai.com/css/images/samplePict7.jpg" class="lazy" alt="上海瑞慈"><p><i class="iconfont icon-dingxiang2"></i><span>小于 5 公里</span></p></dt>
+                        <dd class="caption">上海瑞慈 静安(瑞铂门诊部)</dd>
+                        <dd>上海市静安区江宁路212号凯迪克大厦1-2楼（靠近北京西路）</dd>                        
+                        <dd>公交：74b线、855路、158路、74区间路、141路、825路</dd>
+                        <dd>地铁：地铁2号线北新泾站</dd>
+                    </dl>
+                </a>
+                <a href="//cdn01.360guanai.com/apps/m.360guanai.com/html/healthCheckupStore/detail.html">
+                    <dl>
+                        <dt><img data-src="//cdn11.360guanai.com/apps/m.360guanai.com/css/images/samplePict6.jpg" class="lazy" alt="上海美年大健康"><p><i class="iconfont icon-dingxiang2"></i><span>小于 1 公里</span></p></dt>
+                        <dd class="caption">上海美年大健康 小木桥总院</dd>
+                        <dd>上海市徐汇区小木桥路251号天亿大厦1-3层（近斜土路）</dd>                        
+                        <dd>公交：104路 隧道一线 128路 45路 89路 72路</dd>
+                        <dd>地铁：4号线大木桥路站，7号线、9号线肇嘉浜路</dd>
+                    </dl>
+                </a>
+                <a href="//cdn01.360guanai.com/apps/m.360guanai.com/html/healthCheckupStore/detail.html">
+                    <dl>
+                        <dt><img data-src="//cdn11.360guanai.com/apps/m.360guanai.com/css/images/samplePict7.jpg" class="lazy" alt="上海瑞慈"><p><i class="iconfont icon-dingxiang2"></i><span>小于 5 公里</span></p></dt>
+                        <dd class="caption">上海瑞慈 静安(瑞铂门诊部)</dd>
+                        <dd>上海市静安区江宁路212号凯迪克大厦1-2楼（靠近北京西路）</dd>                        
+                        <dd>公交：74b线、855路、158路、74区间路、141路、825路</dd>
+                        <dd>地铁：地铁2号线北新泾站</dd>
+                    </dl>
+                </a>
+                <a href="//cdn01.360guanai.com/apps/m.360guanai.com/html/healthCheckupStore/detail.html">
+                    <dl>
+                        <dt><img data-src="//cdn11.360guanai.com/apps/m.360guanai.com/css/images/samplePict6.jpg" class="lazy" alt="上海美年大健康"><p><i class="iconfont icon-dingxiang2"></i><span>小于 1 公里</span></p></dt>
+                        <dd class="caption">上海美年大健康 小木桥总院</dd>
+                        <dd>上海市徐汇区小木桥路251号天亿大厦1-3层（近斜土路）</dd>                        
+                        <dd>公交：104路 隧道一线 128路 45路 89路 72路</dd>
+                        <dd>地铁：4号线大木桥路站，7号线、9号线肇嘉浜路</dd>
+                    </dl>
+                </a>
+            </div>
+        </div>
+        <!--您可能感兴趣-->
+        <div id="recommend" class="v-gap portal tabs">
+            <ul class="tabs-handle">
+                <li class="on">您可能感兴趣</li>
+            </ul>
+            <div class="tabs-frame">
+                <a href="//cdn01.360guanai.com/apps/m.360guanai.com/html/suit/detail.html">
+                    <dl>
+                        <dt><img data-src="//cdn15.360guanai.com/apps/m.360guanai.com/css/images/samplePict5.jpg" class="lazy" alt="全新版 套餐二"></dt>
+                        <dd class="caption">
+                            全新版 套餐二
+                        </dd>                        
+                        <dd>
+                            <span class="current-price">￥530</span>
+                            <span class="original-price">|￥1000</span>                            
+                        </dd>
+                        <dd><i class="iconfont icon-biaoqian"></i> <span class="text-success">高性价比, 白领青睐</span></dd>
+                        <dd>本月已有 <span class="arial text-danger">1998</span> 人购买</dd>
+                    </dl>
+                </a>
+                <a href="//cdn01.360guanai.com/apps/m.360guanai.com/html/suit/detail.html">
+                    <dl>
+                        <dt><img data-src="//cdn15.360guanai.com/apps/m.360guanai.com/css/images/samplePict2.jpg" class="lazy" alt=" C套餐(上海版)"></dt>
+                        <dd class="caption">
+                            C套餐(上海版)
+                        </dd>                        
+                        <dd>
+                            <span class="current-price">￥680</span>
+                            <span class="original-price">|￥1200</span>
+                        </dd>
+                        <dd><i class="iconfont icon-biaoqian"></i> <span class="text-success">入职必需, 高性价比</span></dd>
+                        <dd>本月已有 <span class="arial text-danger">1235</span> 人购买</dd>
+                    </dl>                    
+                </a>
+                <a href="//cdn01.360guanai.com/apps/m.360guanai.com/html/suit/detail.html">
+                    <dl>
+                        <dt><img data-src="//cdn15.360guanai.com/apps/m.360guanai.com/css/images/samplePict3.jpg" class="lazy" alt=" C套餐(上海版)"></dt>
+                        <dd class="caption">
+                            医院 套餐一(上海版)
+                        </dd>                        
+                        <dd>
+                            <span class="current-price">￥380</span>
+                            <span class="original-price">|￥600</span>
+                        </dd>
+                        <dd><i class="iconfont icon-biaoqian"></i> <span class="text-success">高性价比, 白领青睐</span></dd>
+                        <dd>本月已有 <span class="arial text-danger">2641</span> 人购买</dd>
+                    </dl>                    
+                </a>
+                <a href="//cdn01.360guanai.com/apps/m.360guanai.com/html/suit/detail.html">
+                    <dl>
+                        <dt><img data-src="//cdn15.360guanai.com/apps/m.360guanai.com/css/images/samplePict4.jpg" class="lazy" alt=" C套餐(上海版)"></dt>
+                        <dd class="caption">
+                            C套餐(上海版)
+                        </dd>                        
+                        <dd>
+                            <span class="current-price">￥680</span>
+                            <span class="original-price">|￥1200</span>
+                        </dd>
+                        <dd><i class="iconfont icon-biaoqian"></i> <span class="text-success">入职必需, 高性价比</span></dd>
+                        <dd>本月已有 <span class="arial text-danger">3128</span> 人购买</dd>
+                    </dl>
+                </a>                
+            </div>
+        </div>
+        <!--体检品牌-->
+        <div id="brand" class="v-gap portal tabs">
+            <ul class="tabs-handle">
+                <li class="on">合作品牌</li>
+                <li class="pull-right">
+                    <a href="#" class="more"><span>更多</span> <span class="simsun">></span></a>
+                </li>
+            </ul>
+            <div class="tabs-frame">
+                <a href="#"><img src="//cdn15.360guanai.com/apps/m.360guanai.com/css/images/brand1.png" class="lazy" alt="美年大健康"></a>
+                <a href="#"><img src="//cdn15.360guanai.com/apps/m.360guanai.com/css/images/brand2.png" class="lazy" alt="瑞慈体检"></a> 
+                <a href="#"><img src="//cdn15.360guanai.com/apps/m.360guanai.com/css/images/brand3.png" class="lazy" alt="慈铭体检"></a>
+                <a href="#"><img src="//cdn15.360guanai.com/apps/m.360guanai.com/css/images/brand4.png" class="lazy" alt="民众体检"></a>
+                <a href="#"><img src="//cdn15.360guanai.com/apps/m.360guanai.com/css/images/brand5.png" class="lazy" alt="天健阳光"></a>
+                <a href="#"><img src="//cdn15.360guanai.com/apps/m.360guanai.com/css/images/brand6.png" class="lazy" alt="瑞美"></a>
+                <a href="#"><img src="//cdn15.360guanai.com/apps/m.360guanai.com/css/images/brand7.png" class="lazy" alt="爱康国宾"></a>
+            </div>
+        </div>        
+        <!--热门城市-->
+        <div id="hotCity" class="v-gap portal tabs">
+            <ul class="tabs-handle">
+                <li class="on">热门城市</li>
+            </ul>
+            <ul class="tabs-frame">
+                <li><a href="#">全国体检通</a></li>
+                <li><a href="#">北京体检通</a></li>
+                <li><a href="#">成都体检通</a></li>
+                <li><a href="#">广州体检通</a></li>
+                <li><a href="#">上海体检通</a></li>
+                <li><a href="#">深圳体检通</a></li>
+            </ul>
+        </div>
+        <!--脚部辅助导航|APP下载入口|版权信息-->
+        <footer>            
+            <div id="appStore">
+                <a class="btn btn-default btn-xs" href="http://www.360guanai.com"><i class="iconfont icon-xianshiqi"></i>电脑版</a>
+                <a class="btn btn-default btn-xs" href="https://itunes.apple.com/cn/app/guan-ai-hui/id1036167230?mt=8" download="关爱汇.ipa"><i class="iconfont icon-pingguo"></i>APP Store</a>                
+                <a href="http://mobile-app.oss-cn-hangzhou.aliyuncs.com/download/android/guanaihui_v1.1.0.apk" class="btn btn-success btn-xs" download="关爱汇.apk"><i class="iconfont icon-anzhuo"></i>Android</a>
+            </div>
+            <div id="copyright">
+                <p>
+                    <span>一站式体检专家</span>
+                    <span class="arial">www.360guanai.com</span>
+                </p>
+                <p>
+                    <span class="arial">©2008-2015</span> 
+                    <span>关爱体检通 版权所有</span>
+                </p>
+            </div>
+        </footer>
+        <ul id="floater">
+            <li class="scroll-up"><a href="javascript:void(0);"><i class="iconfont icon-xiangshang3"></i></a></li>            
+            <li class="share"><a href="#"><i class="iconfont icon-fenxiang"></i></a></li>
+        </ul>
+        <ul id="fixedNav" class="fixed-toolbar">
+            <li><a href="../home/index.html"><i class="iconfont icon-shouye"></i><span>首页</span></a></li>
+            <li><a href="tel:4007287289"><i class="glyphicon glyphicon-earphone"></i><span>联系客服</span></a></li>
+            <li><a href="../special/preferential.html"><i class="iconfont icon-quan"></i><span>每日特惠</span></a></li>
+            <li><a href="../cart/index.html"><i class="iconfont icon-gouwuchekong"></i><span>购物车</span></a></li>
+            <li><a href="../account/login.html"><i class="iconfont icon-shequ"></i><span>会员中心</span></a></li>            
+        </ul>
+        <script src="//cdn01.360guanai.com/apps/m.360guanai.com/js/app.min.js"></script>        
+        <script data-main="//cdn01.360guanai.com/apps/m.360guanai.com/js/home/index.min.js" src="//cdn01.360guanai.com/guanaihui/js/require.min.js"></script>
+    </body>
+</html>

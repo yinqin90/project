@@ -1,0 +1,67 @@
+@import "../../../../guanaihui/less/mixins.less" ;
+@import "../variables.less";
+#overseasSuitList {
+    dl {
+        color:@font-color;
+        padding: 10px;
+        margin-left: 70px;
+        border-bottom: 1px solid @portal-border-color;
+        .clearfix();
+
+        dt {
+            float: left;
+
+            img {
+                height: 40px;
+                width: 40px;
+            }
+        }
+
+        dd {
+            margin-left: 50px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+
+            h4 {
+                color: @link-color;
+                font-size: 1.4rem;
+                font-weight:500;
+                margin-top: 0px;
+            }
+        }
+
+        .price {
+            color: @danger-color;
+            font-size:1.3rem;
+        }
+    }
+
+    dl.suit-header {
+        margin-left: 0;
+
+        dt {
+            img {
+                height: 60px;
+                width: 60px;
+            }
+        }
+
+        dd {
+            margin-left: 70px;
+
+            h3 {
+                color: @link-color;
+                font-size: 1.5rem;
+                font-weight:600;
+                margin-top: 0px;
+            }
+        }
+    }
+
+    p {
+        border-top: 1px solid @portal-border-color;
+        padding: 10px 0;
+        text-align: center;
+    }
+}

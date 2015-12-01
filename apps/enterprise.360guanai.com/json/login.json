@@ -1,0 +1,15 @@
+{
+    "code": "200" ,
+    "message" : "" ,
+    "result" : {
+        "Id" : 10650 ,
+        "User_Id" : 32167 ,
+        "Code" : "qiekangzixun" ,
+        "CompanyName" : "上海且康健康咨询管理有限公司" ,
+        "Contact" : "CEO" ,
+        "Tel" : "400-728-7289" ,
+        "Address" : "上海市吴中东路天源大厦3楼" ,
+        "Description" : "健康后市场巨擘" ,
+        "OrderAmount" : 25
+    }
+}

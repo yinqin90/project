@@ -1,0 +1,56 @@
+@import "../../../../guanaihui/less/mixins.less" ;
+@import "../variablesMember.less" ;
+
+#totalPanel {
+    font-size : 1.2rem ;
+    margin : 10px ;
+}
+.booking{
+	padding-bottom:@gap-dimension;
+	.booking-header{
+		padding:@gap-dimension;
+		font-size:@font-size-md;
+		color:@info-color;
+		background-color:@bg-color;
+		.label{
+			background-color:#FFF;
+			border:1px solid @info-color;
+			color:@info-color;
+			font-weight:500;
+			width:60px;
+		}
+	}
+	
+	.booking-body{
+		padding:0px 10px;
+		border-top:1px solid @bg-color;
+		border-bottom:1px solid @bg-color;
+		p{
+			padding:3px 0px;
+			border-top:1px dotted @bg-color;
+			&:first-child{
+				border-top:0px;
+			}
+		}
+		dl{
+			padding:3px 0px;
+			border-top:1px dotted @bg-color;
+		}
+		dt{
+			width:50px;
+			float:left;
+			font-weight:500;
+		}
+		dd{
+			margin-left:50px;
+		}
+	}
+	.prod-title{
+		font-size:@font-size-md;
+	}
+	a{
+		&:link{
+			color:#000;
+		}
+	}
+}

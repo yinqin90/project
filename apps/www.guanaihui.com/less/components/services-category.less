@@ -1,0 +1,43 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：services-category (服务类别)
+ 3. 作者：zhaohuagang@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.services-category {
+    background : @green-color ;    
+    padding-bottom : 1px ;
+    &>li {
+        height:42px;
+        &>a {
+            .clearfix() ;
+            color : #fff ;
+            display : block ;            
+            line-height : 40px ;
+            text-indent : 10px ;
+            &>span {
+                font-size : 14px ;
+            }
+            &>.deputy {
+                color : #d9ecc1 ;
+                float : right ;
+                font-size : 12px ;
+                line-height : 40px ;
+                &>i {
+                    color : #fff ;
+                    font-size : 12px ;
+                    margin-right : @gap-dimension ;
+                }
+            }
+            &.on {
+                background : @lighter-block-gray-color ;
+                color : @green-color ;
+                &>.deputy {
+                    color : @green-color ;
+                    i {
+                        color : @green-color ;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,316 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：institution/details.less (机构详情页)
+ 3. 作者：liuchangkui@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：variables.less (整个应用的风格变量)
+ 3. 作者：zhaohuagang@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+块级颜色设置
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+线条颜色设置
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+字体颜色设置
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+字体设置
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+尺寸设置
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：pagination.less (分页器变量)
+ 3. 作者：zhaohuagang@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：mixins (混合)
+ 3. 作者：zhaohuagang@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：background.less(混合 -> 背景类)
+ 3. 作者：zhaohuagang@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：background.less(混合 -> 圆角类)
+ 3. 作者：zhaohuagang@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：background.less(混合 -> 块级化并居中类)
+ 3. 作者：zhaohuagang@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1.  项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：display.less(混合 -> 显示方式类)
+ 3. 作者：zhaohuagang@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：float.less(混合 -> 浮动类)
+ 3. 作者：zhaohuagang@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：background.less(混合 -> 字体类)
+ 3. 作者：zhaohuagang@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：background.less(混合 -> 文本类)
+ 3. 作者：zhaohuagang@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：background.less(混合 -> 三角符号类)
+ 3. 作者：zhaohuagang@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+#infoContainer {
+  font-size: 1.2rem;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+#infoContainer .col-xs-6 {
+  padding: 0px;
+  background: #FFF;
+}
+#infoContainer #instInfo {
+  padding-right: 40px;
+}
+#infoContainer #instInfo hr {
+  border: 1px solid #e3e3e3;
+}
+#infoContainer #instInfo #title h1 {
+  font-size: 2rem;
+  display: inline-block;
+  margin: 0px;
+  color: #000;
+}
+#infoContainer #instInfo #title span {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0px 3px;
+}
+#infoContainer #instInfo #title p {
+  margin: 10px 0;
+  line-height: 2.2rem;
+}
+#infoContainer #instInfo #prodProp {
+  margin-bottom: 8px;
+}
+#infoContainer #instInfo ul#prodTable {
+  width: 100%;
+  list-style: none;
+}
+#infoContainer #instInfo ul#prodTable li {
+  display: inline-block;
+  margin: 0;
+  padding: 2px 3px;
+  width: 32%;
+}
+#infoContainer #instInfo ul#prodTable li dl {
+  border: 1px solid #e3e3e3;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 2px;
+  margin: 0 0 10px 0;
+  cursor: pointer;
+}
+#infoContainer #instInfo ul#prodTable li dl dt {
+  float: right;
+  width: 50px;
+  background-color: transparent;
+  padding: 2px 0px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+#infoContainer #instInfo ul#prodTable li dl dt p {
+  color: #ff8400;
+  margin: 0;
+  text-align: center;
+}
+#infoContainer #instInfo ul#prodTable li dl dt p:nth-of-type(1) {
+  font-size: 1rem;
+  line-height: 3rem;
+}
+#infoContainer #instInfo ul#prodTable li dl dt p:nth-of-type(2) {
+  display: none;
+}
+#infoContainer #instInfo ul#prodTable li dl dd {
+  margin-right: 50px;
+  padding-left: 3px;
+}
+#infoContainer #instInfo ul#prodTable li dl dd p {
+  width: 110px;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#infoContainer #instInfo ul#prodTable li:hover dl {
+  border: 1px solid #ff8400;
+}
+#infoContainer #instInfo ul#prodTable li:hover dl dt {
+  background-color: #ff8400;
+}
+#infoContainer #instInfo ul#prodTable li:hover dl dt p {
+  color: #FFF;
+}
+#infoContainer #instInfo ul#prodTable li:hover dl dt p:nth-of-type(1) {
+  line-height: 1.2rem;
+}
+#infoContainer #instInfo ul#prodTable li:hover dl dt p:nth-of-type(2) {
+  display: block;
+}
+#infoContainer #instInfo .info-row {
+  margin: 20px 0;
+}
+#infoContainer .userflag {
+  background-color: #fcca00;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  padding: 2px 4px;
+  text-align: center;
+  color: #fff;
+}
+#infoContainer .score i {
+  color: #d2d2d2;
+}
+#infoContainer .score i.active {
+  color: #ff8400;
+}
+#infoContainer .score span {
+  font-size: 1.6rem;
+  display: inline-block;
+  margin-left: 10px;
+  color: #ff8400;
+}
+.viewer {
+  padding: 10px !important;
+  border: 1px solid #dfdede;
+  margin-bottom: 10px !important;
+}
+.viewer img {
+  width: 580px;
+  height: 356px;
+}
+.inst-img-box {
+  position: relative;
+  padding: 0 30px;
+}
+.inst-img-box .controller {
+  background: #f4f4f4 ;
+  cursor: pointer ;
+  position: absolute ;
+  width: 28px ;
+  height: 75px;
+  line-height: 75px;
+  z-index: 1000 ;
+}
+.inst-img-box .controller .iconfont {
+  font-family: "宋体";
+  font-size: 3rem;
+  line-height: 3rem;
+}
+.inst-img-box .controller.prev {
+  left: 0;
+}
+.inst-img-box .controller.next {
+  right: 0;
+}
+.inst-img-box .content {
+  display: inline-block;
+  border: 1px solid #eee;
+  height: 75px;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+.inst-img-box .content .item {
+  width: 121px;
+  height: 75px;
+  display: inline-block;
+  margin: 0 6px !important;
+}
+#descContainer {
+  border-top: 1px solid #dfdfdf;
+  background-color: #fafafa;
+  font-size: 1.2rem;
+  margin: 0 auto;
+  padding-top: 40px;
+  clear: both;
+}
+#descContainer #body {
+  padding: 0px;
+  margin: 0 auto;
+  background-color: #FFF;
+}
+#descContainer #body #instList {
+  margin: 36px 20px 0 20px;
+  padding-bottom: 36px;
+  overflow: hidden;
+  border-bottom: 2px solid #e3e3e3;
+}
+#descContainer #body #instList #baiduMapContainer {
+  width: 750px;
+  height: 360px;
+  float: left;
+}
+#descContainer #body #instList #list {
+  margin-left: 750px;
+  padding-left: 35px;
+  height: 360px;
+}
+#descContainer #body #instList #list h4 {
+  font-size: 1.4rem;
+  margin-top: 5px;
+  padding: 0px 0 8px 0;
+  font-weight: 400;
+  border-bottom: 1px solid #e3e3e3;
+  color: #333;
+}
+#descContainer #body #instList #list p.address {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0;
+}
+#descContainer #body #instList #list p i {
+  margin-right: 10px;
+}
+#descContainer #body #instDetails {
+  clear: both;
+}
+#descContainer .section-title {
+  padding: 0;
+}
+dl.prop {
+  overflow: hidden;
+  color: #333;
+}
+dl.prop dt {
+  width: 60px;
+  float: left;
+  text-align: right;
+  vertical-align: middle;
+}
+dl.prop dd {
+  margin-left: 60px;
+  vertical-align: middle;
+}
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

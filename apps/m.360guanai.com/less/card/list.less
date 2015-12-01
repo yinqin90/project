@@ -1,0 +1,91 @@
+@import "../../../../guanaihui/less/mixins.less" ;
+@import "../variables.less" ;
+
+#filter-panel {
+    .clearfix() ;
+    padding : @gap-dimension 0 @gap-dimension @gap-dimension ;
+    &>li {
+        float : left ;
+        padding-right : @gap-dimension ;
+        width : 33.3% ;
+        .item {
+            background : #fff ;
+            .border-radius(3px) ;
+            border : 1px solid #ddd ;
+            .clearfix() ;
+            display: block;
+            padding: 0;
+            &>div {
+                padding : 6px ;
+            }
+            .handle {
+                float: right;
+                line-height: 18px;
+                padding: 4px;
+                text-align: center;
+                width: 24px;
+                text-align: left;
+                .iconfont {
+                    font-size: 1.0rem;
+                }
+            }
+           .selected-label {
+                border-right: 1px solid #ddd;
+                color: @font-color ;
+                font-size: 1.2rem;
+                margin-right: 24px;
+                text-align: left;
+                .text-ellipsis();
+            }
+        }
+    }
+}
+
+#listContainer {    
+    .tabs-frame {
+        padding : 8px 0 ;
+        &>a{
+            display : block ;
+            float : left ;
+            margin : 5px 0 ;
+            width : 50% ;
+            dt {
+                img {
+                    width : 120px ;
+                    height : 120px ;
+                }
+            }
+            dd {
+                text-align : center ;    
+                .icon-gouwuchekong{
+                    color:@danger-color;
+                    display:inline-block;
+                    font-size:2.3rem;
+                    padding:0 15px;
+                }                      
+                .current-price {
+                    color : #c00 ;
+                    font-weight : 600 ;
+                    font-size : 16px ;                        
+                }
+                .original-price {
+                    text-decoration : line-through ;
+                }                
+            }
+        }        
+    }
+}
+
+#totalPanel {
+    background : #fcfcfc ;
+    border-top : 1px solid @portal-border-color ;
+    font-size : 1.2rem ;
+    padding : 8px ;
+}
+
+.dropdown-menu {
+    min-width : 72px ;
+    &>li>a {
+        padding : 3px 12px ;
+    }
+}

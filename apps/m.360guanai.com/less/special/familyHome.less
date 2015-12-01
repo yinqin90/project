@@ -1,0 +1,99 @@
+@import "../../../../guanaihui/less/mixins.less" ;
+@import "../variables.less" ;
+@circle-inner:220px;
+@gap-top:60px;
+@gap-item:90px;
+@size-person:70px;
+body{
+	background-color:#00ac8e; 
+}
+#wraper{
+	padding-top:@gap-top;
+	position:relative;
+	.circle01{
+		width:@circle-inner;
+		height:@circle-inner;
+		border-radius:50%;
+		background-image:url(../../css/images/special/family-banner.jpg);
+		background-position:-100px 0px;
+		background-size:auto 150%;
+	}
+	.circle02{
+		width:@circle-inner+20px;
+		height:@circle-inner+20px;
+		border-radius:50%;
+		padding:10px;
+		background-color:#bfebe3;
+	}
+	.circle03{
+		width:@circle-inner+40px;
+		height:@circle-inner+40px;
+		border-radius:50%;
+		padding:10px;
+		background-color:#95ddd0;
+	}
+	.circle04{
+		width:@circle-inner+120px;
+		height:@circle-inner+120px;
+		border-radius:50%;
+		padding:40px;
+		background-color:#4fc6b1;
+	}
+	.circle05{
+		width:@circle-inner+180px;
+		height:@circle-inner+180px;
+		border-right:1px solid #FFF;
+		border-radius:50%;
+		padding:30px;
+		margin-left:-180px;
+	}
+	dl{
+		clear:both;
+		&:nth-of-type(1){
+			position:absolute;
+			left:100px;
+			top:65px;
+		}
+		&:nth-of-type(2){
+			position:absolute;
+			left:170px;
+			top:165px;
+		}
+		&:nth-of-type(3){
+			position:absolute;
+			left:170px;
+			top:280px;
+		}
+		&:nth-of-type(4){
+			position:absolute;
+			left:100px;
+			top:380px;
+		}
+		dt{
+			width:@size-person;
+			height:@size-person;
+			float:left;
+			border-radius:50%;
+			border:2px solid #FFF;
+			text-align:center;
+			background-color:rgb(126,197,145);
+			img{
+				width:80%;
+			}
+		}
+		dd{
+			margin-left:70px;
+			padding:5px 10px;
+			font-size:1.4rem;
+			color:#FFF;
+			p:nth-of-type(1){
+				border-bottom:1px solid #FFF;
+				font-size:1.6rem;
+			}
+			p:nth-of-type(2){
+				line-height:1.4rem;
+				padding-top:2px;
+			}
+		}
+	}
+}

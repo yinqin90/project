@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>个人中心 - 关爱体检通</title>
+    <!-- 引入stylesheet资源 -->
+    <link rel="stylesheet" href="//cdn01.360guanai.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="//cdn01.360guanai.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">-->
+    <link rel="stylesheet" href="//cdn01.360guanai.com/apps/m.360guanai.com/css/app.min.css">
+    <link rel="stylesheet" href="//cdn01.360guanai.com/apps/m.360guanai.com/css/account/orderDetails.min.css">
+</head>
+
+<body>
+    <!--头部logo|搜索|定位-->
+    <header>
+        <a href="javascript:history.back();" class="back"><i class="iconfont icon-fanhui"></i></a>
+        <h1>订单详情</h1>
+    </header>
+    <div id="totalPanel" class="v-gap">
+        订单号&nbsp;:&nbsp;<span class="arial info">10000014897446</span>
+        <span class="label">待支付</span>
+    </div>
+    <!--收货人信息-->
+    <div class="portal tabs">
+        <ul class="tabs-handle" id="panelPersonInfoStartUp">
+            <li class="on">收货人信息</li>
+            <li class="ctrls"><i class="iconfont icon-xiangshang3"></i></li>
+        </ul>
+        <div class="info-block" id="panelPersonInfo">
+            <dl>
+                <dt>收货人</dt>
+                <dd>刘昌逵</dd>
+            </dl>
+            <dl>
+                <dt>联系方式</dt>
+                <dd>15021761239</dd>
+            </dl>
+            <dl>
+                <dt>收货地址</dt>
+                <dd>上海市浦东新区唐镇路东唐苑</dd>
+            </dl>
+        </div>
+    </div>
+    <!--商品信息-->
+    <div class="portal tabs">
+        <ul class="tabs-handle" id="panelProdInfoStartUp">
+            <li class="on">商品信息</li>
+            <li class="ctrls"><i class="iconfont icon-xiangshang3"></i></li>
+        </ul>
+        <div id="panelProdInfo">
+            <table class="prod-list">
+                <tr>
+                    <td>
+                        <img data-src="http://cdn01.360guanai.com/apps/m.360guanai.com/css/images/C2.png" class="lazy" />
+                    </td>
+                    <td>医院版套餐二（二甲、专业医院）</td>
+                    <td>
+                        <p class="price">￥<span class="arila">280</span></p>
+                        <p class="price old">￥<span class="arila">560</span></p>
+                        <p>x&nbsp;<span class="arila">1</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img data-src="http://cdn01.360guanai.com/apps/m.360guanai.com/css/images/A2.png" class="lazy" />
+                    </td>
+                    <td>入职套餐（北京版）</td>
+                    <td>
+                        <p class="price">￥<span class="arila">380</span></p>
+                        <p class="price old">￥<span class="arila">800</span></p>
+                        <p>x&nbsp;<span class="arila">1</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img data-src="http://cdn01.360guanai.com/apps/m.360guanai.com/css/images/B2.png" class="lazy" />
+                    </td>
+                    <td>VIP套餐（北京版）</td>
+                    <td>
+                        <p class="price">￥<span class="arila">380</span></p>
+                        <p class="price old">￥<span class="arila">800</span></p>
+                        <p>x&nbsp;<span class="arila">1</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img data-src="http://cdn01.360guanai.com/apps/m.360guanai.com/css/images/C2.png" class="lazy" />
+                    </td>
+                    <td>医院套餐一（北京版）</td>
+                    <td>
+                        <p class="price">￥<span class="arila">380</span></p>
+                        <p class="price old">￥<span class="arila">800</span></p>
+                        <p>x&nbsp;<span class="arila">1</span></p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!--支付信息-->
+    <div class="portal tabs">
+        <ul class="tabs-handle">
+            <li class="on">支付信息</li>
+        </ul>
+        <div class="info-block">
+            <dl>
+                <dt>支付方式</dt>
+                <dd>
+                    <span>在线支付</span>
+                    <span class="tip">&nbsp;(支持货到付款)</span>
+                </dd>
+            </dl>
+            <dl>
+                <dt>优惠码抵扣</dt>
+                <dd>￥<span class="arial">10</span></dd>
+            </dl>
+            <dl>
+                <dt>余额抵扣</dt>
+                <dd>￥<span class="arial">100</span></dd>
+            </dl>
+            <dl>
+                <dt>应付总额</dt>
+                <dd class="price">
+                    ￥<span class="arial">550</span>
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <!---fixed-toolbar-->
+    <div class="fixed-toolbar">
+        <a href="#" class="btn btn-danger btn-block">确认支付</a>
+    </div>
+    <!--脚部辅助导航|APP下载入口|版权信息-->
+    <footer>            
+        <div id="appStore">
+            <a class="btn btn-default btn-xs" href="http://www.360guanai.com"><i class="iconfont icon-xianshiqi"></i>电脑版</a>
+            <a class="btn btn-default btn-xs" href="https://itunes.apple.com/cn/app/guan-ai-hui/id1036167230?mt=8" download="关爱汇.ipa"><i class="iconfont icon-pingguo"></i>APP Store</a>                
+            <a href="http://mobile-app.oss-cn-hangzhou.aliyuncs.com/download/android/guanaihui_v1.1.0.apk" class="btn btn-success btn-xs" download="关爱汇.apk"><i class="iconfont icon-anzhuo"></i>Android</a>
+        </div>
+        <div id="copyright">
+            <p>
+                <span>一站式体检专家</span>
+                <span class="arial">www.360guanai.com</span>
+            </p>
+            <p>
+                <span class="arial">©2008-2015</span> 
+                <span>关爱体检通 版权所有</span>
+            </p>
+        </div>
+    </footer>
+    <script src="//cdn01.360guanai.com/apps/m.360guanai.com/js/app.min.js"></script>
+    <script data-main="//cdn01.360guanai.com/apps/m.360guanai.com/js/account/orderDetails.min.js" src="//cdn01.360guanai.com/guanaihui/js/require.min.js"></script>
+</body>
+
+</html>

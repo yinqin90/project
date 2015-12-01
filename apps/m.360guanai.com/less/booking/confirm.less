@@ -1,0 +1,26 @@
+@import "../../../../guanaihui/less/mixins.less";
+@import "../variables.less";
+.portal {
+    dl {
+        .clearfix();
+        padding: 0 10px 10px;
+        margin-top: @gap-dimension ;
+        dt {
+            float: left;
+            font-weight: 400;
+            line-height: 35px;
+            text-align: right;
+            width: 60px;
+        }
+        dd {
+            margin-left: 60px;
+            position:relative;
+            #btn-vertify{
+                position:absolute;
+                right:0;
+                top:0;
+            }
+        }
+    }
+}
+

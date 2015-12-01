@@ -1,0 +1,49 @@
+@import "../../../../guanaihui/less/mixins.less" ;
+@import "../variables.less" ;
+@import "../product/items.less" ;
+@import "../product/supportStore.less" ;
+
+#cardSummary {
+    .clearfix() ;
+    padding : 8px ;
+    .card-id {
+        span {
+            font-size : 2.4rem ;
+            font-weight : 400 ;
+        }
+    }
+    .price {
+        font-size : 1.8rem ;
+        font-weight : 600 ;
+        line-height : 35px ;
+    }
+    dt {
+        float : left ;
+        padding : 10px ;
+        width : 100px ;
+        img {            
+            height : 80px ;
+            width : 80px ;
+        }
+    }
+    dd {
+        font-size : 1.2rem ;
+        margin-left : 90px ;
+    }
+}
+
+.tabs {
+    .tabs-frame {
+        
+        p {
+            font-size : 1.2rem ;
+            line-height : 22px ;
+            padding : 10px ;
+            text-indent : 25px ;
+        }        
+    }
+}
+
+#supportStore {
+    padding : @gap-dimension 5px ;
+}

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>体检卡- 关爱体检通</title>
+        <meta name="keywords" content="上海企业体检,上海体检团购,上海体检预约,上海体检套餐,上海体检医院">
+        <meta name="description" content="关爱体检通是全国首家知名体检中心指定服务平台，支持爱康国宾、瑞慈、美年大健康、慈铭等体检中心和长海医院、东方医院、曙光医院、瑞金医院等体检医院。低于团购，欢迎企业及个人咨询400-728-7289"> 
+        <!-- 引入stylesheet资源 -->
+        <link rel="stylesheet" href="//cdn01.360guanai.com/bootstrap/3.3.4/css/bootstrap.min.css">       
+        <link rel="stylesheet" href="http://cdn01.360guanai.com/apps/m.360guanai.com/css/app.min.css">
+        <link rel="stylesheet" href="http://cdn01.360guanai.com/apps/m.360guanai.com/css/card/list.min.css"> 
+    </head>
+    <body>
+        <!--头部logo|搜索|定位-->
+        <header>
+            <a href="javascript:history.back();" class="back"><i class="iconfont icon-fanhui"></i></a>  
+            <div class="btn-group btn-group-xs assistant-tools" aria-label="Default button group" role="group">
+                <button class="btn btn-success search" type="button"><i class="iconfont icon-sousuo"></i></button>
+                <button class="btn btn-success nav" type="button"><i class="iconfont icon-liebiao1"></i></button>                
+            </div>            
+            <h1>体检卡</h1>
+        </header>             
+        <!--过滤条件按钮组-->
+        <ul id="filter-panel">
+            <li class="dropdown">
+                <a class="item dropdown-toggle btn btn-default" data-toggle="dropdown">
+                    <div class="handle"><i class="iconfont icon-xiangxia2"></i></div>
+                    <div class="selected-label">版本</div>                    
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">北京版</a></li>
+                    <li><a href="#">上海版</a></li>
+                    <li><a href="#">广州版</a></li>                    
+                    <li><a href="#">深圳版</a></li>
+                    <li><a href="#">成都版</a></li>
+                </ul>
+            </li>            
+            <li class="dropdown">
+                <a class="item dropdown-toggle btn btn-default" data-toggle="dropdown">
+                    <div class="handle"><i class="iconfont icon-xiangxia2"></i></div>
+                    <div class="selected-label">类型</div>                    
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">年度体检</a></li>
+                    <li><a href="#">高端体检</a></li>
+                    <li><a href="#">医院体检</a></li>                    
+                    <li><a href="#">入职体检</a></li>                    
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a class="item dropdown-toggle btn btn-default" data-toggle="dropdown">
+                    <div class="handle"><i class="iconfont icon-xiangxia2"></i></div>
+                    <div class="selected-label">智能排序</div>                    
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">按热销成都</a></li>
+                    <li><a href="#">按价位</a></li>                                    
+                </ul>
+            </li>
+        </ul>        
+        <!--统计信息-->
+        <div id="totalPanel">共找到符合条件的记录 <span class="text-danger arial">0</span> 条</div>
+        <!--数据面板-->
+        <div class="portal tabs" id="listContainer">
+            <ul class="tabs-handle">
+                <li class="on">您可能感兴趣的体检卡</li>                
+            </ul>
+            <div class="tabs-frame">
+                <a href="detail.html">
+                    <dl>
+                        <dt><img data-src="//cdn15.360guanai.com/apps/m.360guanai.com/css/images/samplePict5.jpg" class="lazy"></dt>
+                        <dd class="caption">
+                            全新版 套餐二
+                        </dd>                        
+                        <dd>
+                            <span class="current-price">￥530</span>
+                            <span class="original-price">|￥1000</span>
+                        </dd>
+                        <dd><i class="iconfont icon-biaoqian"></i> <span class="text-success">高性价比, 白领青睐</span></dd>
+                        <dd>本月已有 <span class="arial text-danger">1998</span> 人购买<i class="iconfont icon-gouwuchekong"></i></dd>
+                    </dl>
+                </a>
+                <a href="detail.html">
+                    <dl>
+                        <dt><img data-src="//cdn15.360guanai.com/apps/m.360guanai.com/css/images/samplePict2.jpg" class="lazy"></dt>
+                        <dd class="caption">
+                            C套餐(上海版)
+                        </dd>                        
+                        <dd>
+                            <span class="current-price">￥680</span>
+                            <span class="original-price">|￥1200</span>
+                        </dd>
+                        <dd><i class="iconfont icon-biaoqian"></i> <span class="text-success">入职必需, 高性价比</span></dd>
+                        <dd>本月已有 <span class="arial text-danger">1235</span> 人购买<i class="iconfont icon-gouwuchekong"></i></dd>
+                    </dl>
+                </a>
+                <a href="detail.html">
+                    <dl>
+                        <dt><img data-src="//cdn15.360guanai.com/apps/m.360guanai.com/css/images/samplePict3.jpg" class="lazy"></dt>
+                        <dd class="caption">
+                            医院 套餐一(上海版)
+                        </dd>                        
+                        <dd>
+                            <span class="current-price">￥380</span>
+                            <span class="original-price">|￥600</span>
+                        </dd>
+                        <dd><i class="iconfont icon-biaoqian"></i> <span class="text-success">入职必需, 高性价比</span></dd>
+                        <dd>本月已有 <span class="arial text-danger">1235</span> 人购买<i class="iconfont icon-gouwuchekong"></i></dd>
+                    </dl>                    
+                </a>
+                <a href="detail.html">
+                    <dl>
+                        <dt><img data-src="//cdn15.360guanai.com/apps/m.360guanai.com/css/images/samplePict4.jpg" class="lazy"></dt>
+                        <dd class="caption">
+                            C套餐(上海版)
+                        </dd>                        
+                        <dd>
+                            <span class="current-price">￥680</span>
+                            <span class="original-price">|￥1200</span>
+                        </dd>
+                        <dd><i class="iconfont icon-biaoqian"></i> <span class="text-success">入职必需, 高性价比</span></dd>
+                        <dd>本月已有 <span class="arial text-danger">1235</span> 人购买<i class="iconfont icon-gouwuchekong"></i></dd>
+                    </dl>
+                </a>
+                <a href="detail.html">
+                    <dl>
+                        <dt><img data-src="//cdn15.360guanai.com/apps/m.360guanai.com/css/images/samplePict5.jpg" class="lazy"></dt>
+                        <dd class="caption">
+                            全新版 套餐二
+                        </dd>                        
+                        <dd>
+                            <span class="current-price">￥530</span>
+                            <span class="original-price">|￥1000</span>
+                        </dd>
+                        <dd><i class="iconfont icon-biaoqian"></i> <span class="text-success">入职必需, 高性价比</span></dd>
+                        <dd>本月已有 <span class="arial text-danger">1235</span> 人购买<i class="iconfont icon-gouwuchekong"></i></dd>
+                    </dl>
+                </a>
+                <a href="detail.html">
+                    <dl>
+                        <dt><img data-src="//cdn15.360guanai.com/apps/m.360guanai.com/css/images/samplePict2.jpg" class="lazy"></dt>
+                        <dd class="caption">
+                            C套餐(上海版)
+                        </dd>                        
+                        <dd>
+                            <span class="current-price">￥680</span>
+                            <span class="original-price">|￥1200</span>
+                        </dd>
+                        <dd><i class="iconfont icon-biaoqian"></i> <span class="text-success">入职必需, 高性价比</span></dd>
+                        <dd>本月已有 <span class="arial text-danger">1235</span> 人购买<i class="iconfont icon-gouwuchekong"></i></dd>
+                    </dl>
+                </a>
+                <a href="detail.html">
+                    <dl>
+                        <dt><img data-src="//cdn15.360guanai.com/apps/m.360guanai.com/css/images/samplePict3.jpg" class="lazy"></dt>
+                        <dd class="caption">
+                            医院 套餐一(上海版)
+                        </dd>                        
+                        <dd>
+                            <span class="current-price">￥380</span>
+                            <span class="original-price">|￥600</span>
+                        </dd>
+                        <dd><i class="iconfont icon-biaoqian"></i> <span class="text-success">入职必需, 高性价比</span></dd>
+                        <dd>本月已有 <span class="arial text-danger">1235</span> 人购买<i class="iconfont icon-gouwuchekong"></i></dd>
+                    </dl>                    
+                </a>
+                <a href="detail.html">
+                    <dl>
+                        <dt><img data-src="//cdn15.360guanai.com/apps/m.360guanai.com/css/images/samplePict4.jpg" class="lazy"></dt>
+                        <dd class="caption">
+                            C套餐(上海版)
+                        </dd>                        
+                        <dd>
+                            <span class="current-price">￥680</span>
+                            <span class="original-price">|￥1200</span>
+                        </dd>
+                        <dd><i class="iconfont icon-biaoqian"></i> <span class="text-success">入职必需, 高性价比</span></dd>
+                        <dd>本月已有 <span class="arial text-danger">1235</span> 人购买<i class="iconfont icon-gouwuchekong"></i></dd>
+                    </dl>
+                </a>
+            </div>            
+        </div>
+        <!--提示数据加载状态，比如：数据加载中... 或者 数据加载到了最后一条-->
+        <div class="portal" id="dataLoadStatus">数据加载中...</div>
+        <!--路径导航-->
+        <div id="pathNavigation">
+            <a href="#">关爱体检通</a>
+            <span class="simsun">></span>
+            <a href="#">上海</a>
+            <span class="simsun">></span>
+            <span>体检卡</span>
+            <span class="simsun">></span>
+            <span>列表</span>
+        </div>
+        <!--脚部辅助导航|APP下载入口|版权信息-->
+        <footer>            
+            <div id="appStore">
+                <a class="btn btn-default btn-xs" href="http://www.360guanai.com"><i class="iconfont icon-xianshiqi"></i>电脑版</a>
+                <a class="btn btn-default btn-xs" href="https://itunes.apple.com/cn/app/guan-ai-hui/id1036167230?mt=8" download="关爱汇.ipa"><i class="iconfont icon-pingguo"></i>APP Store</a>                
+                <a href="http://mobile-app.oss-cn-hangzhou.aliyuncs.com/download/android/guanaihui_v1.1.0.apk" class="btn btn-success btn-xs" download="关爱汇.apk"><i class="iconfont icon-anzhuo"></i>Android</a>
+            </div>
+            <div id="copyright">
+                <p>
+                    <span>一站式体检专家</span>
+                    <span class="arial">www.360guanai.com</span>
+                </p>
+                <p>
+                    <span class="arial">©2008-2015</span> 
+                    <span>关爱体检通 版权所有</span>
+                </p>
+            </div>
+        </footer>
+        <ul id="floater">
+            <li class="scroll-up"><a href="javascript:void(0);"><i class="iconfont icon-xiangshang3"></i></a></li>            
+            <li class="share"><a href="#"><i class="iconfont icon-fenxiang"></i></a></li>
+        </ul>
+        <ul id="fixedNav" class="fixed-toolbar">
+            <li><a href="../home/index.html"><i class="iconfont icon-shouye"></i><span>首页</span></a></li>
+            <li><a href="tel:4007287289"><i class="glyphicon glyphicon-earphone"></i><span>联系客服</span></a></li>
+            <li><a href="../special/preferential.html"><i class="iconfont icon-quan"></i><span>每日特惠</span></a></li>
+            <li><a href="../cart/index.html"><i class="iconfont icon-gouwuchekong"></i><span>购物车</span></a></li>
+            <li><a href="../account/login.html"><i class="iconfont icon-shequ"></i><span>会员中心</span></a></li>            
+        </ul> 
+        <script src="http://cdn01.360guanai.com/apps/m.360guanai.com/js/app.min.js"></script>
+        <script data-main="http://cdn01.360guanai.com/apps/m.360guanai.com/js/card/list.min.js" src="http://cdn01.360guanai.com/guanaihui/js/require.min.js"></script>
+    </body>
+</html>

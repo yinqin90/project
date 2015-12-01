@@ -1,0 +1,423 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：institution/details.less (机构详情页)
+ 3. 作者：liuchangkui@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@import "../variables/global.less";
+@import "../mixins";
+
+// 基础信息和幻灯片模块
+#infoContainer{
+  width:1170px !important;
+  font-size:1.2rem;
+  margin:0 auto;
+  .col-xs-6{
+    padding:0px;
+  }
+  #instInfo{
+    padding-right:40px;
+    hr{
+      border:1px solid #e3e3e3;
+    }
+    // 机构名称
+    #title{
+      h1{
+        font-size:2rem;
+        display:inline-block;
+        margin:0px;
+        color:#000;
+      }
+      span{
+        display:inline-block;
+        vertical-align: middle;
+        margin:0px 3px;
+      }
+      p{
+        margin:@gap-dimension 0;
+      }
+    }
+    // 机构评分和质量信息
+    #qualityBox{
+      overflow:hidden;
+      #score{
+        float:left;
+      }
+      #quality{
+        margin:0px;
+        padding:0px;
+        float:right;
+        li{
+          display:inline-block;
+          margin-right:40px;
+        }
+        .no-margin{
+          margin-right:0px;
+        }
+      }
+    }
+    // 优惠项
+    ul#discount{
+      background-color:#fafafa;
+      padding:14px;
+      li{
+        .tag(@color){
+          display:inline-block;
+          position:relative;
+          background:@color;
+          padding:2px 5px;
+          color:#FFF;
+          margin:5px 10px 5px 0;
+          span{
+            .triangle-next(6px,@color);
+            position:absolute;
+            right:-10px;
+            top:4px;
+          }
+        }
+        .red-tag{
+          .tag(#ff5f88);
+        }
+        .green-tag{
+          .tag(@green-color);
+        }
+      }
+    }
+    // 分类标签
+    dl#tags{
+      dd{
+        span{
+          display:inline-block;
+          margin:0px @gap-dimension/2;
+          background-color:#f0f0f0;
+          .border-radius(10px);
+          box-sizing: border-box;
+          padding:2px @gap-dimension;
+          &.no-margin{
+            margin-left:0;
+          }
+        }
+      }
+    }
+    // 基础检查项说明
+    #checkItemDesc{
+      dd{
+        span{
+          background-color:@green-color;
+          padding:2px @gap-dimension;
+          .border-radius(10px);
+          color:#FFF;
+          margin:0 @gap-dimension/2;
+          &.no-margin{
+            margin-left:0;
+          }
+        }
+      }
+    }
+    // 检查项
+    #checkItemBox{
+      ul.checkItemList{
+        li{
+          .border-radius(6px);
+          padding:7px;
+          border:1px solid #d9d9d9;
+          margin-bottom:5px;
+          // 检查项图片
+          img{
+            display:inline-block;
+            vertical-align: middle;
+            width:130px;
+            height:100px;
+          }
+          // 检查项名称与支持门店
+          .item-content{
+            display:inline-block;
+            vertical-align: middle;
+            padding-left: @gap-dimension;
+            line-height:3rem;
+            h4{
+              color:#ff8400;
+            }
+            p{
+              span{
+                color:#ff8400;
+              }
+            }
+          }
+          // 检查项的价格
+          .item-price{
+            display:inline-block;
+            float:right;
+            height:100px;
+            width:100px;
+            background-color:#ff8400;
+            text-align:center;
+            padding:20px 0px;
+            p{
+              &:nth-of-type(1){
+                color:#FFF;
+                font-size:2rem;
+                line-height:2rem;
+                .money-icon{
+                  font-size:1rem;
+                  vertical-align: text-bottom;
+                }
+              }
+              &:nth-of-type(2){
+                color:#ffbc75;
+                font-size:.8rem;
+                line-height:.8rem;
+                text-decoration: line-through;
+                .money-icon{
+                  font-size:.6rem;
+                  vertical-align: text-bottom;
+                }
+              }
+              &:nth-of-type(3){
+                color:#FFF;
+                font-size:1.4rem;
+                line-height:3rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // 行
+    .info-row{
+      margin: 20px 0;
+    }
+  }
+  .userflag{
+    background-color:#fcca00;
+    .border-radius(3px);
+    padding:2px 4px;
+    text-align: center;
+    color:#fff;
+  }
+  .score{
+    i{
+      color:#d2d2d2;
+      &.active{
+        color:#ff8400;
+      }
+    }
+    span{
+      font-size:1.6rem;
+      display: inline-block;
+      margin-left:10px;
+      color:#ff8400;
+    }
+  }
+
+}
+
+.viewer{
+  padding:@gap-dimension !important;
+  border:1px solid #dfdede;
+  margin-bottom:@gap-dimension !important;
+  img{
+    width:563px;
+    height:342px;
+  }
+}
+
+.inst-img-box{
+  position:relative;
+  padding:0 30px;
+  .controller{
+    background : #f4f4f4 ;
+    cursor : pointer ;
+    position : absolute ;
+    width : 28px ;
+    height:75px;
+    line-height: 75px;
+    z-index : 1000 ;
+    .iconfont{
+      font-family: "宋体";
+      font-size:3rem;
+      line-height:3rem;
+    }
+    &.prev{
+      left:0;
+    }
+    &.next{
+      right:0;
+    }
+  }
+  .content{
+    display:inline-block;
+    border:1px solid #eee;
+    height:75px;
+    width:100%;
+    overflow:hidden;
+    text-align:center;
+    .item{
+      width:119px;
+      height:75px;
+      display:inline-block;
+      margin:0 6px !important;
+	  img{
+	  	width:100%;
+		height:100%;
+	  }
+    }
+  }
+
+}
+// 地图和cms内容模块
+#descContainer{
+  border-top:1px solid #dfdfdf;
+  background-color:#fafafa;
+  font-size:1.2rem;
+  margin:0 auto;
+  padding-top:40px;
+  ul#menu{
+    background: #fafafa;
+    margin-bottom:0px;
+    margin-top:0px;
+    li{
+      border-bottom:2px solid @green-color;
+      color:@green-color;
+      padding:3px 20px;
+      display:inline-block;
+    }
+  }
+  #body{
+    padding:0px;
+    width:1170px !important;
+    margin:0 auto;
+    background-color:#FFF;
+    #instList{
+      margin:36px 20px 0 20px;
+      padding-bottom:36px;
+      overflow:hidden;
+      border-bottom:2px solid #e3e3e3;
+      // 地图
+      #baiduMapContainer{
+        width:750px;
+        height:360px;
+        float:left;
+      }
+      // 地图右边的机构门店信息和列表
+      #list{
+        margin-left:750px;
+        padding-left:35px;
+        height:360px;
+        .inst-select{
+          // 筛选门店
+          dt{
+            width:75px;
+            float:left;
+            font-size:1.4rem;
+            color:#333;
+          }
+          dd{
+            // 门店数量
+            &:nth-of-type(1){
+              width:100px;
+              float:right;
+              text-align:right;
+            }
+            // 地区选择
+            &:nth-of-type(2){
+              margin-left:75px;
+              margin-right:100px;
+            }
+          }
+        }
+        // 门店列表
+        ul{
+          height:170px;
+          overflow-x:hidden;
+          overflow-y:auto;
+          margin:@gap-dimension 0 0 0;
+
+          li{
+            padding:@gap-dimension @gap-dimension @gap-dimension 20px;
+            border-top:1px solid #FFF;
+            border-right:0;
+            border-bottom:1px solid #e3e3e3;
+            border-left:4px solid #FFF;
+            cursor: pointer;
+            // 门店选中状态
+            &.selected{
+              border-top:1px solid #e3e3e3;
+              border-bottom:1px solid #e3e3e3;
+              border-left:4px solid @green-color;
+              background-color:#fbfbfb;
+              dd{
+                color:@green-color;
+              }
+            }
+            // 门店名称和营业时间
+            dl{
+              dt{
+                width:128px;
+                float:right;
+              }
+              dd{
+                margin-right:128px;
+                color:#333;
+                .ellipsis();
+                padding-right:@gap-dimension;
+              }
+            }
+            // 门店地址
+            p.address{
+              .ellipsis();
+              margin:0;
+            }
+
+          }
+
+        }
+        h4{
+          font-size:1.4rem;
+          padding:30px 0 8px 0;
+
+          font-weight:400;
+          border-bottom:1px solid #e3e3e3;
+          color:#333;
+        }
+        p{
+          // 门店地址
+          &.address{
+            .ellipsis();
+            margin:0;
+          }
+          // 交通信息图标
+          i{
+            margin-right:@gap-dimension;
+          }
+        }
+      }
+
+    }
+    #instDetails{
+      clear:both;
+    }
+  }
+}
+
+// 属性展示通用样式
+@width-prop:60px;
+dl.prop{
+  overflow: hidden;
+  dt{
+    width:@width-prop;
+    float:left;
+    text-align:right;
+    vertical-align: middle;
+  }
+  dd{
+    margin-left:@width-prop;
+    padding-left:@gap-dimension;
+    vertical-align: middle;
+  }
+}
+.ellipsis{
+  overflow:hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

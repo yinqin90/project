@@ -1,0 +1,35 @@
+@import "../../../../guanaihui/less/mixins.less" ;
+@import "../variables.less" ;
+
+#myRecommendList {
+    dl {
+        border-bottom: 1px dotted @portal-border-color;
+        color: @font-color;
+        padding: 10px;
+        .clearfix();
+
+        dt {
+            float: left;
+            font-weight: 500;
+            width:65px;
+            overflow:hidden;
+            white-space:nowrap;
+            text-overflow:ellipsis;
+            text-align: center;
+
+            img {
+                height: 40px;
+                width: 40px;
+            }
+        }
+
+        .price {
+            font-size: 16px;
+        }
+
+        dd {
+            padding: 2px 0;
+            margin-left: 75px;
+        }
+    }
+}

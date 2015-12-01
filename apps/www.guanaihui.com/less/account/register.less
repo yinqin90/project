@@ -1,0 +1,106 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1. 项目名称：www.guanaihui.com前端MVC框架
+2. 文件名称：account/register.less (登录页面)
+3. 作者：yuxiaochen@guanaihui.com
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@import "../mixins.less";
+@import "../variables.less";
+@import "../components/account-header.less";
+
+
+.register-form
+{
+	width: 100%;
+	border-bottom: 1px solid #fafafa;
+	margin-bottom: 30px;
+	.container
+	{
+		margin:60px auto 80px auto;
+		border:1px solid #fafafa;
+		width: 980px;
+		background: #fff;
+		.content{
+			width: 585px;
+			margin: 0 auto;
+			padding-bottom: 50px;
+			.title{
+				border-bottom: 1px solid #fafafa;
+				margin: 45px auto 40px auto;			
+				p{
+					text-align: left;
+					font-size: 30px;
+					font-weight: 400;
+
+					span{
+						font-size: 25px;
+						font-weight: 200;
+						margin-left: 15px;
+					}
+				}	
+			}
+
+			form{
+				dt{
+					font-weight: 500;
+					font-size: 16px;
+					float: left;
+					width: 100px;
+					text-align: right;
+					padding-top: 10px;
+				}
+
+				dd
+				{
+				  margin-left: 35px;
+				  float: left;
+				  &:nth-child(3){
+				  	margin-left:15px;
+				  }
+				}
+				
+				input{
+					padding:20px 15px;
+				}
+				
+				.checkbox label{
+					font-size: 14px;
+				}
+
+				.login
+				{
+					font-size: 15px;
+					margin-left: 40px;
+					color: @default-font-color;
+				}
+
+				.change
+				{
+					font-size: 12px;
+				}
+
+				#txtMobile,#txtPassword{
+					width: 320px;
+				}
+
+				#btnGetSmsCode{
+					width: 120px;
+    				height: 42px;
+    				color: white;
+    				font-weight: 400;
+    				background-color: #939393;
+				}
+
+				#btnRegister
+				{
+					width: 300px;
+					background-color: @link-hover-color;
+					color: white;
+					height: 50px;
+					font-size: 20px;
+				}
+			}
+		}
+	}
+}
+
+

@@ -1,0 +1,57 @@
+@import "../../../../guanaihui/less/mixins.less" ;
+@import "../variables.less";
+@import "../product/items.less";
+@import "../product/supportStore.less";
+nav {
+    display: none;
+}
+.tabs .tabs-frame{
+    padding:0 5px;
+}
+#productBasic {
+    padding: 10px;
+    margin-bottom: 10px;
+    min-height: 120px;
+    .clearfix();
+    #productImg {
+        float: left;
+        img {
+            width: 100px;
+            height: 100px;
+        }
+    }
+    #productInfo {
+        padding-left: 110px;
+        h1 {
+            font-size: 1.6rem;
+            margin-top: 10px;
+        }
+        .price {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: #ff3434;
+            em {
+                color: #9ea5ac;
+                font-size: 1.2rem;
+                font-style: normal;
+                font-weight: 400;
+                text-decoration: line-through;
+            }
+            label {
+                color: @font-color;
+                font-size: 1.2rem;
+                font-weight: 400;
+            }
+        }
+        .adv {
+            .iconfont {
+                color: #5cb85c;
+                padding-right: 5px;
+            }
+        }
+    }
+}
+#supportStore{
+    padding-top:8px;
+    padding-bottom:8px;
+}

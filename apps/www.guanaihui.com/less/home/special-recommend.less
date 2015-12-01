@@ -1,0 +1,124 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：home/index.less (首页-特别推荐)
+ 3. 作者：yinqin@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/**********************特别推荐****************************/
+
+.special-recommend {
+    border-bottom: 1px solid @lighter-line-gray-color;
+    border-left: 1px solid @lighter-line-gray-color;
+    border-right: 1px solid @lighter-line-gray-color;
+    border-top: 2px solid @darker-line-gray-color;
+    .clearfix();
+    .left {
+        border-right: 1px solid @lighter-line-gray-color;
+        float: left;
+        padding: 20px;
+        width: 280px;
+        img {
+            height: 415px;
+            width: 240px;
+        }
+    }
+    .right {
+        margin-left: 280px;
+        .care-recommend {
+            height: 265px;
+            .clearfix();
+            &>a {
+                border-bottom: 1px solid @lighter-line-gray-color;
+                border-right: 1px solid @lighter-line-gray-color;
+                float: left;
+                padding: 20px;
+                width: 33.3%;
+                text-align: center;
+                &:last-child {
+                    border-right: none;
+                }
+                dl {
+                    position: relative;
+                    dt {
+                        img {
+                            height: 185px;
+                            width: 265px;
+                        }
+                    }
+                    dd {
+                        color: @default-font-color;
+                        font-size: 12px;
+                        padding-top: 10px;
+                        text-align: left;
+                        &.caption {
+                            color: @dark-font-color;
+                            font-size: 15px;
+                            .clearfix();
+                            span {
+                                display: inline-block;
+                                &.name {
+                                    height: 20px;
+                                    width: 200px;
+                                    overflow: hidden;
+                                }
+                                &.price {
+                                    color: @orange-color;
+                                }
+                            }
+                        }
+                        &.des {
+                            height: 27px;
+                            overflow: hidden;
+                        }
+                        &.special-icon {
+                            position: absolute;
+                            right: -16px;
+                            top: -30px;
+                            width: 64px;
+                        }
+                    }
+                }
+            }
+        }
+        .normal-store {
+            .clearfix();
+            &>a {
+                border-right: 1px solid @lighter-line-gray-color;
+                float: left;
+                padding: 20px;
+                width: 20%;
+                text-align: center;
+                &:last-child {
+                    border-right: none;
+                }
+                dl {
+                    dt {
+                        img {
+                            height: 100px;
+                            width: 145px;
+                        }
+                    }
+                    dd {
+                        color: @dark-font-color;
+                        font-size: 13px;
+                        padding-top: 8px;
+                        text-align: left;
+                        .clearfix();
+                        .text-ellipsis();
+                        span {
+                            display: inline-block;
+                            &.name {
+                                width: 95px;
+                                .text-ellipsis();
+                            }
+                            &.price {
+                                color: @orange-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

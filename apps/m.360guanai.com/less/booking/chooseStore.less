@@ -1,0 +1,133 @@
+@import "../../../../guanaihui/less/mixins.less";
+@import "../variables.less";
+@import "../home/district.less";
+.reserve-info {
+    font-size: 1.2rem;
+    padding: 10px;
+    p {
+        .text-ellipsis();
+        i {
+            color: @decoration-color;
+        }
+    }
+}
+
+#filter-panel {
+    .clearfix();
+    padding: @gap-dimension 0 @gap-dimension @gap-dimension ;
+    &>li {
+        float: left;
+        padding-right: @gap-dimension ;
+        width: 33.3%;
+        .item {
+            background: #fff;
+            .border-radius(3px);
+            border: 1px solid #ddd;
+            .clearfix();
+            display: block;
+            padding: 0;
+            &>div {
+                padding: 6px;
+            }
+            .handle {
+                float: right;
+                line-height: 18px;
+                padding: 4px;
+                text-align: center;
+                width: 24px;
+                .iconfont {
+                    font-size: 1.0rem;
+                }
+            }
+            .selected-label {
+                border-right: 1px solid #ddd;
+                font-size: 1.2rem;
+                margin-right: 24px;
+                text-align: left;
+                .text-ellipsis();
+            }
+        }
+    }
+}
+
+#totalPanel {
+    display: none;
+    background: #fcfcfc;
+    border-top: 1px solid @portal-border-color ;
+    font-size: 1.2rem;
+    padding: 8px;
+}
+
+#listContainer {
+    color: @link-color ;
+    display: none;
+    dl {
+        border-bottom: 1px dotted @portal-border-color ;
+        border-top: 1px solid @portal-border-color ;
+        .clearfix();
+        padding: 10px 5px;
+        dt {
+            float: left;
+            font-weight: 400;
+            width: 105px;
+            img {
+                height: 70px;
+                width: 105px;
+            }
+            p {
+                font-size: 1.2rem;
+                margin-top: 5px;
+                text-align: center;
+            }
+        }
+        dd {
+            color: @font-color ;
+            font-size: 1.2rem;
+            margin: 0 0 5px 115px;
+            .text-ellipsis();
+            &.caption {
+                color: @link-color ;
+                font-size: 1.4rem;
+            }
+        }
+        &.active {
+            background-color: #fff;
+            border-top:1px solid @decoration-color ;
+            border-bottom:1px solid @decoration-color ;
+            -webkit-animation: flashStore 2s infinite alternate;
+            /* Chrome, Safari, Opera */
+            animation: flashStore 2s infinite alternate;
+            /* Chrome, Safari, Opera */
+            @-webkit-keyframes flashStore {
+                from {
+                    background-color: #fff;
+                }
+                to {
+                    background-color: #f7f7f9;
+                }
+            }
+            @keyframes flashStore {
+                from {
+                    background-color: #fff;
+                }
+                to {
+                    background-color: #f7f7f9;
+                }
+            }
+        }
+    }
+}
+
+.dropdown-menu {
+    min-width: 95px;
+    max-height: 205px;
+    overflow: auto;
+    &>li>a {
+        font-size: 1.2rem;
+        padding: 3px 12px;
+    }
+}
+
+#dataLoadStatus {
+    display: none;
+}

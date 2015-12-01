@@ -1,0 +1,45 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：product/detail.less (产品详情页面)
+ 3. 作者：yinqin@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@import "../mixins.less";
+@import "../variables.less";
+@import "../components/datepicker3.less"; //日历选择控件
+@import "./detail-product-fixed.less"; //页面滚动顶部fixed
+@import "./detail-description.less"; //产品描述
+@import "./detail-suit-store.less"; //试用门店
+@import "./detail-service-detail.less"; //服务详情
+@import "./detail-store-package.less"; //到店礼包
+@import "./detail-reserve-tips.less"; //预约须知
+@import "./detail-layout-right.less"; //右侧内容
+@import "./module-reserve.less"; //右侧内容
+body {
+    background-color: #fafafa;
+}
+
+.container {
+    .clearfix();
+    .layout-left {
+        margin-right: 230px;
+    }
+    .layout-right {
+        float: right;
+        width: 215px;
+        text-align: center;
+    }
+}
+
+
+/********bootstrap 样式*************/
+
+.btn-warning {
+    color: #fff;
+    background-color: @orange-color;
+    border-color: @orange-color;
+}
+
+.btn-lg {
+    padding: 10px 35px;
+}

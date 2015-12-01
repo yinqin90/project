@@ -1,0 +1,33 @@
+@import "../../../../guanaihui/less/mixins.less";
+@import "../variables.less";
+
+#assetList {
+    .clearfix();
+
+    dl {
+        border-bottom: 1px dotted @portal-border-color;
+        padding:10px;
+        margin:2px 0;
+        dt {
+            float: left;
+
+            img {
+                width: 60px;
+                height: 60px;
+            }
+        }
+
+        dd {
+            margin: 0 0 2px 80px;
+        }
+
+        .caption {
+            color: @link-color;
+            font-size: 13px;
+        }
+
+        .price {
+            font-size: 16px;
+        }
+    }
+}

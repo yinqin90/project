@@ -1,0 +1,90 @@
+@import "../../../../guanaihui/less/mixins.less" ;
+@import "../variables.less";
+/******************************
+    机构详情头部
+    ***********************************************************
+*/
+#banner {
+    position: relative;
+    h3 {
+        background: rgba(0,0,0,0.6);
+        bottom: 0px;
+        color: #fff;
+        font-size: 1.4rem;
+        height: 35px;
+        line-height: 35px;
+        margin: 0 auto;
+        padding-left:10px;
+        position: absolute;
+        width: 100%;
+    }
+}
+/******************************
+    重载tab样式
+    ***********************************************************
+*/
+.tabs {
+    .tabs-handle {
+        li {
+            margin: 0;
+            text-align: center;
+            width: 50%;
+        }
+    }
+}
+/******************************
+   机构介绍
+    ***********************************************************
+*/
+#suitInfo {
+    padding: 10px;
+}
+/******************************
+   体检项目
+    ***********************************************************
+*/
+#productList {
+   background-color:#fff;
+   ul{
+    li.title{
+        color:@font-color;
+        border-bottom:1px solid @portal-border-color;
+        font-size:1.3rem;
+        padding:5px 10px;
+    }
+    li{
+        color:@link-color;
+        font-size:1.4rem;
+        padding:10px;
+        .clearfix();
+        span.circle{
+            background-color:@portal-border-color;
+            display:inline-block;
+            height:8px;
+            margin-right:10px;
+            width:8px;
+            .border-radius(50%);
+        }
+        span.price{
+            color:@danger-color;
+            float:right;
+        }
+    }
+   }
+}
+/********预约手机号码Dialog*******************/
+.modal{
+    .modal-header{
+        padding:10px;
+        h3{
+            font-size:1.4rem;
+            font-weight:500;
+        }
+    }
+    .modal-body{
+        padding:30px 15px;
+    }
+    .modal-footer{
+        padding:5px 10px;
+    }
+}
